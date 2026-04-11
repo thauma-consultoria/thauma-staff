@@ -192,6 +192,12 @@ Formato padrao com 3-5 insights acionaveis para alimentar Caliope, Hermes, Dedal
 
 ---
 
+## MEMORIA PERSISTENTE (Obsidian)
+
+Apos concluir analises relevantes, registrar descobertas-chave em `THAUMA/40-Conhecimento/DATASUS/` no Obsidian. Antes de analisar um hospital, verificar se ja existe nota em `THAUMA/10-CRM/Prospects/[Hospital].md` com dados anteriores. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+
+---
+
 ## REGRAS DE QUALIDADE
 
 1. **Todo numero tem fonte** — Nunca apresentar dado sem explicitar base, periodo e metodo

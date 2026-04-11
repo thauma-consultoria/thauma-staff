@@ -89,6 +89,23 @@ Diretorio de projetos: `Projetos/`
 
 ---
 
+## MEMORIA PERSISTENTE (Obsidian — entre sessoes)
+
+No inicio de sessoes de projeto:
+1. Ler `THAUMA/70-Equipe/Arquimedes.md` — status de entregas entre sessoes
+2. Ler `THAUMA/20-Projetos/` — notas de projetos ativos
+
+Ao final, atualizar `THAUMA/70-Equipe/Arquimedes.md` com:
+- Status de cada entrega ativa (fase, % conclusao, bloqueios)
+- Proximos milestones
+- Dependencias entre departamentos
+
+Ao iniciar/concluir projeto: criar/atualizar `THAUMA/20-Projetos/[Cliente]/`
+
+**Protocolo completo:** `.claude/agents/_protocolo_obsidian.md`
+
+---
+
 ## INTERFACE COM DEPARTAMENTOS
 
 | Departamento | O que Arquimedes pede | Quando |

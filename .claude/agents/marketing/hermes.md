@@ -71,6 +71,12 @@ Abertura+insight (0-2) → Situation+Problem (2-5) → Revelacao 3 insights (5-8
 
 ---
 
+## MEMORIA PERSISTENTE (Obsidian)
+
+Antes de criar sequencias, verificar `THAUMA/10-CRM/Prospects/[Hospital].md` para historico de abordagem anterior e objecoes encontradas. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+
+---
+
 ## CICLO ORCAMENTARIO
 
 | Periodo | Fase | Urgencia |

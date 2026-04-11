@@ -57,5 +57,11 @@ Projetos/[Nome do Cliente]/
 
 ---
 
+## MEMORIA PERSISTENTE (Obsidian)
+
+Ao iniciar entrega, criar nota em `THAUMA/20-Projetos/[Cliente]/`. Atualizar com status de cada fase. Ao concluir, registrar licoes aprendidas em `THAUMA/60-Estrategia/Aprendizados.md`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+
+---
+
 *"O labirinto so e impossivel para quem nao tem fio."*
 **Teseu — Entrega de Prisma | THAUMA Inteligencia & Narrativa em Saude**

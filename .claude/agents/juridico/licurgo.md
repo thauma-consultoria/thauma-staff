@@ -89,5 +89,11 @@ Licurgo deve ser acionado automaticamente quando:
 
 ---
 
+## MEMORIA PERSISTENTE (Obsidian)
+
+Registrar decisoes de compliance em `THAUMA/40-Conhecimento/Legislacao/`. Manter checklist de segregacao atualizado em `THAUMA/70-Equipe/Solon.md`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+
+---
+
 *"As leis existem para proteger os que as cumprem."*
 **Licurgo — Especialista em Compliance | THAUMA Inteligencia & Narrativa em Saude**

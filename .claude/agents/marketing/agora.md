@@ -71,6 +71,12 @@ Seguir cronograma da sequencia. Escalar para Pedro quando prospect responder pos
 
 ---
 
+## MEMORIA PERSISTENTE (Obsidian)
+
+Antes de contatar um prospect, verificar `THAUMA/10-CRM/Prospects/[Hospital].md` no Obsidian para historico de interacoes. Apos contatos relevantes, atualizar a nota do prospect com status, resposta, proximos passos. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+
+---
+
 ## CICLO ORCAMENTARIO (Impacta Volume)
 
 | Periodo | Volume de Prospeccao |

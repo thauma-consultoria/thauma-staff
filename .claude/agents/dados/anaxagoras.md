@@ -63,6 +63,12 @@ Plotly com paleta THAUMA (#001070, #FFFFFF, #40D7FF).
 
 ---
 
+## MEMORIA PERSISTENTE (Obsidian)
+
+Apos calcular SAT de um hospital, registrar resumo em `THAUMA/10-CRM/Prospects/[Hospital].md` (top 3 parlamentares, valor total, vazios). Registrar aprendizados metodologicos em `THAUMA/40-Conhecimento/Metodologias/`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+
+---
+
 ## REGRAS DE OPERACAO
 
 1. **SAT e a metrica-raiz** — Todo ranking usa SAT. Sem excecao.

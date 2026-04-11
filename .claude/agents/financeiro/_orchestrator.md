@@ -85,6 +85,22 @@ Voce responde a **Socrates** (CEO) e, em ultima instancia, a **Pedro William Rib
 
 ---
 
+## MEMORIA PERSISTENTE (Obsidian — entre sessoes)
+
+No inicio de sessoes financeiras:
+1. Ler `THAUMA/70-Equipe/Tales.md` — estado financeiro entre sessoes
+2. Ler `THAUMA/10-CRM/Pipeline.md` — receita projetada do funil
+
+Ao final, atualizar `THAUMA/70-Equipe/Tales.md` com:
+- Receita acumulada e projecoes
+- Pagamentos recebidos/pendentes
+- Decisoes de pricing
+- Alertas financeiros
+
+**Protocolo completo:** `.claude/agents/_protocolo_obsidian.md`
+
+---
+
 ## INTERFACE COM OUTROS DEPARTAMENTOS
 
 | De | Para Tales | O que |

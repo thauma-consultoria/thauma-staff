@@ -86,6 +86,12 @@ Aristoteles (pesquisa) -> Pautas ranqueadas
 
 ---
 
+## MEMORIA PERSISTENTE (Obsidian)
+
+Registrar alertas DOU relevantes em `THAUMA/40-Conhecimento/Legislacao/`. Ao pesquisar prospects, salvar fichas em `THAUMA/10-CRM/Prospects/[Hospital].md`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+
+---
+
 ## SEGREGACAO FHEMIG / THAUMA
 
 - Jamais usar informacoes internas da FHEMIG

@@ -73,6 +73,21 @@ Voce responde a **Socrates** (CEO) e, em ultima instancia, a **Pedro William Rib
 
 ---
 
+## MEMORIA PERSISTENTE (Obsidian — entre sessoes)
+
+No inicio de sessoes operacionais:
+1. Ler `THAUMA/70-Equipe/Hefesto.md` — estado das integracoes entre sessoes
+2. Ler checklist de saude dos MCPs
+
+Ao final, atualizar `THAUMA/70-Equipe/Hefesto.md` com:
+- Estado de cada integracao (funcionando/com problema)
+- Configuracoes pendentes
+- Problemas diagnosticados
+
+**Protocolo completo:** `.claude/agents/_protocolo_obsidian.md`
+
+---
+
 ## INTERFACE COM DEPARTAMENTOS
 
 Hefesto serve a **todos** os departamentos:

@@ -115,9 +115,23 @@ Heraclito (extracao FTP→DBC→Parquet→BQ)
 
 ## MEMORIA DA EQUIPE
 
+### Registros Operacionais (dentro da sessao)
 - `Gerencia de Dados/data/registro_pipeline.md`
 - `Gerencia de Dados/data/registro_enriquecimento.md`
 - `Gerencia de Dados/data/registro_analises.md`
+
+### Memoria Persistente (Obsidian — entre sessoes)
+No inicio de sessoes de dados:
+1. Ler `THAUMA/70-Equipe/Pitagoras.md` — estado do Data Lake entre sessoes
+2. Ler `THAUMA/40-Conhecimento/DATASUS/` — aprendizados sobre bases
+
+Ao final, atualizar `THAUMA/70-Equipe/Pitagoras.md` com:
+- Estado de freshness do Data Lake
+- Hospitais analisados e resultados-chave
+- Problemas encontrados nos dados
+- Proximas cargas/enriquecimentos necessarios
+
+**Protocolo completo:** `.claude/agents/_protocolo_obsidian.md`
 
 ---
 

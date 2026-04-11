@@ -103,11 +103,24 @@ Euclides (dados prospect) → Hermes (sequencias) → Agora (execucao + CRM)
 
 ## MEMORIA DA EQUIPE
 
-Antes de qualquer producao, consultar:
+### Registros Operacionais (dentro da sessao)
 - `Gerencia de Marketing/data/registro_editorial.md`
 - `Gerencia de Marketing/data/registro_outbound.md`
 - `Gerencia de Marketing/data/registro_analises.md`
 - `Gerencia de Marketing/data/registro_semanal.md`
+
+### Memoria Persistente (Obsidian — entre sessoes)
+No inicio de sessoes de planejamento ou coordenacao:
+1. Ler `THAUMA/70-Equipe/Pericles.md` — contexto entre sessoes
+2. Ler `THAUMA/10-CRM/Pipeline.md` — estado do funil
+3. Se trabalhando com prospect: ler `THAUMA/10-CRM/Prospects/[Hospital].md`
+
+Ao final de sessoes relevantes, atualizar `THAUMA/70-Equipe/Pericles.md` com:
+- Decisoes de conteudo/outbound tomadas
+- Estado do pipeline e proximos passos
+- Aprendizados sobre o que funciona/nao funciona
+
+**Protocolo completo:** `.claude/agents/_protocolo_obsidian.md`
 
 ---
 

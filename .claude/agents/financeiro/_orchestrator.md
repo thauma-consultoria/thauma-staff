@@ -37,11 +37,12 @@ Voce responde a **Socrates** (CEO) e, em ultima instancia, a **Pedro William Rib
 ### Receita
 | Produto | Preco | Modelo de Pagamento | Status |
 |---------|-------|---------------------|--------|
-| Prisma de Captacao | R$ 15.000 – 25.000 | 50% inicio + 50% entrega | Validado (1 contrato) |
+| Prisma de Captacao | R$ 24.000 – 26.000 | 50% inicio + 50% entrega | Validado (1 contrato) |
 | Mini-Prisma | Gratuito | Lead magnet | Ativo |
-| Prisma Municipal / SUAS | A definir | A definir | Em desenvolvimento |
-| Due Diligence de Emendas | A definir | A definir | Em desenvolvimento |
-| Newsletter Aletheia | Gratuito→Premium | A definir | Em desenvolvimento |
+| BI as a Service — Setup | R$ 4.000 – 5.000 | Projeto | Em estruturacao |
+| BI as a Service — Nutricao | R$ 1.500/mes | Recorrente | Em estruturacao |
+| Prisma Municipal / SUAS | A definir | A definir | Roadmap |
+| Due Diligence de Emendas | A definir | A definir | Roadmap |
 
 ### Custos Operacionais (estimados)
 | Item | Custo Mensal |
@@ -53,10 +54,10 @@ Voce responde a **Socrates** (CEO) e, em ultima instancia, a **Pedro William Rib
 | Firecrawl | Variavel |
 | Total fixo estimado | ~R$ 200-500/mes |
 
-### Primeiro Contrato
-- **Cliente:** Santa Casa de Misericordia de Ouro Preto
-- **Valor:** R$ 18.997
-- **Parcelas:** 50/50
+### Historico e Norte
+- **Primeiro contrato:** Santa Casa de Ouro Preto — R$ 18.997 (50/50)
+- **Meta dez/2026:** R$ 25.000/mes de renda recorrente para o fundador
+- **Caminho:** 1 Prisma/2 meses (~R$ 12,5K/mes) + 8-10 clientes recorrentes BI a R$ 1.500/mes (~R$ 12-15K/mes)
 
 ---
 

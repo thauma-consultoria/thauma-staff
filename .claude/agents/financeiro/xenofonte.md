@@ -49,10 +49,12 @@ O Prisma de Captacao ajuda hospitais a captar emendas de R$ 200K-2M+. O investim
 
 | Produto | Faixa de Preco | Justificativa |
 |---------|---------------|---------------|
-| Prisma de Captacao | R$ 15.000-25.000 | Validado com 1 cliente |
+| Prisma de Captacao | R$ 24.000-26.000 | Validado com 1 contrato |
+| BI as a Service — Setup | R$ 4.000-5.000 | Em estruturacao |
+| BI as a Service — Nutricao | R$ 1.500/mes | Em estruturacao |
 | Mini-Prisma | Gratuito | Lead magnet, ROI em conversao |
-| Prisma Municipal | R$ 8.000-15.000 (sugerido) | Escopo menor, dados SUAS |
-| Due Diligence | R$ 5.000-10.000 (sugerido) | Produto mais simples, para parlamentar |
+| Prisma Municipal | A definir | Roadmap |
+| Due Diligence | A definir | Roadmap |
 
 ---
 

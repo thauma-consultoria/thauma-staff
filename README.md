@@ -22,9 +22,11 @@
 
 ## O que e a THAUMA
 
-A **THAUMA** e uma consultoria que transforma dados de producao hospitalar (DATASUS) em **inteligencia politica** para captacao de recursos via emendas parlamentares.
+A **THAUMA** e uma consultoria que promove ganho de eficiencia, escala, qualidade e profissionalismo para gestores de saude publica e prestadores de servico no SUS, por meio de tecnologia, inteligencia artificial e dados publicos de saude.
 
-Hospitais filantropicos brasileiros operam na **Doxa** — pedidos emocionais, sem estrutura, sem dados. A THAUMA os conduz a **Episteme** — argumentos irrefutaveis baseados em ciencia de dados.
+Organizamos dados e construimos narrativas, ferramentas e processos para players da area da saude — conduzindo-os da **Doxa** (opiniao, amadorismo) a **Episteme** (conhecimento verdadeiro, ciencia aplicada).
+
+**Fundacao:** Dezembro de 2025 | **Socios:** Pedro William Ribeiro Diniz, Vinicius de Paula Prudente Aquino, Bruno Volpini Guimaraes
 
 > *"O espanto da descoberta. A ciencia do resultado."*
 
@@ -187,6 +189,19 @@ O Prisma recebe a **luz branca** (dados brutos) e a decompoe no **espectro visiv
 | 3 | **Dialetica de Convencimento** | Pitch deck personalizado por parlamentar (15-20 slides) | Caliope + Dedalo |
 | 4 | **Retorica da Influencia** | Playbook com roteiros, objecoes, cronograma (20-30 pgs) | Hermes |
 
+**Investimento:** R$ 24.000 – R$ 26.000 | **Prazo:** 20-30 dias uteis
+
+### Inteligencia Assistencial (BI as a Service)
+
+Dashboards, relatorios e tratamento de dados DATASUS para hospitais que nao tem equipe de analytics.
+
+| Entrega | Investimento |
+|:--------|:-------------|
+| Setup de dashboard completo | R$ 4.000 – R$ 5.000 |
+| Nutricao mensal | R$ 1.500/mes |
+
+**Logica:** O Prisma abre a porta (projeto de impacto), o BI constroi a recorrencia.
+
 ### Score SAT (Score de Alinhamento Territorial)
 
 Formula proprietaria que cruza base eleitoral do parlamentar com pacientes atendidos pelo hospital:
@@ -279,6 +294,6 @@ thauma-staff/
 
 *"O espanto da descoberta. A ciencia do resultado."*
 
-Fundador: **Pedro William Ribeiro Diniz**
+Fundadores: **Pedro William Ribeiro Diniz** | **Vinicius de Paula Prudente Aquino** | **Bruno Volpini Guimaraes**
 
 </div>

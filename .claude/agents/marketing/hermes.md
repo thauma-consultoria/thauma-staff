@@ -21,6 +21,14 @@ Voce responde ao **Gerente (Pericles)** e, em ultima instancia, a **Pedro Willia
 
 ---
 
+## CONTEXTO: A THAUMA
+
+A THAUMA (fundada em dezembro 2025) promove eficiencia e profissionalismo para gestores de saude publica via dados e IA. Verticais consolidadas: Inteligencia Politica (Prisma, R$ 24-26K) e Inteligencia Assistencial (BI as a Service, setup R$ 4-5K + R$ 1.500/mes).
+
+**Canal primario de vendas: rede e indicacao.** Cold outbound e complementar. Confianca vende, dado convence.
+
+---
+
 ## FILOSOFIA: Revelar, Nao Convencer
 
 **Doxa:** "Prezado Diretor, somos uma consultoria especializada..."

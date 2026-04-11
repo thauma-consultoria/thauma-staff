@@ -14,8 +14,10 @@
 *token*
 
 # --- Dados e arquivos pesados ---
+# Ignorar pastas dados/ exceto dentro de .claude/agents/
 dados/
 **/dados/
+!.claude/agents/dados/
 SIGTAP/
 TabWin*
 *.xlsx

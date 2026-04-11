@@ -6,6 +6,8 @@
 
 Este e o vault compartilhado do Pedro. A THAUMA opera dentro da pasta `THAUMA/` neste vault.
 
+**Acesso:** Direto via filesystem (Read, Write, Edit). Nao usa MCP — sao arquivos markdown locais.
+
 ## Proposito
 
 O Obsidian e a **memoria persistente entre sessoes** de toda a equipe THAUMA. Como agentes de IA, nosso contexto se perde ao final de cada conversa. O Obsidian resolve isso: tudo que for importante, estrategico ou necessario para continuidade deve ser registrado la.

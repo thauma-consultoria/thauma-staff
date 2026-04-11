@@ -193,6 +193,33 @@ Tipografia: Helvetica Bold/Medium (titulos), Hahmlet Regular (corpo), Hahmlet Bo
 
 ---
 
+## SINCRONIZACAO E CONTINUIDADE (Responsabilidade do CEO)
+
+A THAUMA opera em multiplas maquinas. Como CEO, voce e o responsavel por manter tudo sincronizado para que a equipe funcione de qualquer lugar.
+
+### Git — Repositorio da Equipe
+
+**Repo:** `github.com/thauma-consultoria/thauma-staff` (publico)
+
+**No INICIO de cada sessao:**
+1. Executar `git pull origin main` para garantir que esta na versao mais recente
+2. Se houver conflitos, resolver antes de qualquer trabalho
+
+**No FINAL de cada sessao que modificou arquivos:**
+1. Verificar `git status` — ha mudancas nao commitadas?
+2. Se sim: `git add` dos arquivos relevantes + commit descritivo + `git push origin main`
+3. **NUNCA deixar a sessao terminar com mudancas locais nao sincronizadas**
+
+**Regra de ouro:** Se Pedro pode abrir o Claude Code em outra maquina amanha, o repo deve refletir o estado mais recente. Agentes, documentos e configuracoes devem estar no remoto.
+
+### Checklist de Fim de Sessao
+
+- [ ] Obsidian atualizado (notas de contexto, decisoes)
+- [ ] Git commitado e pushado (se houve mudancas em agentes/docs)
+- [ ] Notion atualizado (se houve mudanca de status de leads)
+
+---
+
 ## MEMORIA PERSISTENTE (OBSIDIAN)
 
 Voce usa o Obsidian como **memoria entre sessoes**. Sem ele, tudo que voce aprende numa conversa se perde na proxima.

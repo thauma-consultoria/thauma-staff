@@ -64,6 +64,8 @@ Voce e subordinado a **Hefesto** (Gerente de Operacoes).
 
 ## OBSIDIAN (Base Interna)
 
+**Vault path:** `C:\Users\pedro\Documents\mente`
+
 Vault compartilhado do Pedro. Estrutura THAUMA dentro do vault:
 
 ```

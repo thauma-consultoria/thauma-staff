@@ -1,0 +1,99 @@
+# ===========================
+# THAUMA .gitignore
+# ===========================
+
+# --- Credenciais e configs sensiveis ---
+.mcp.json
+**/.mcp.json
+.claude/settings.local.json
+**/.claude/settings.local.json
+*.env
+.env.*
+*credentials*
+*secret*
+*token*
+
+# --- Dados e arquivos pesados ---
+dados/
+**/dados/
+SIGTAP/
+TabWin*
+*.xlsx
+*.xls
+*.csv
+*.parquet
+*.dbc
+*.dbf
+*.rds
+*.RData
+*.Rhistory
+.Rhistory
+**/.Rhistory
+
+# --- Documentos binarios ---
+*.pdf
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.zip
+*.rar
+
+# --- Imagens ---
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.webp
+
+# --- Leads e dados de clientes (PII) ---
+Leads/
+
+# --- Node.js ---
+node_modules/
+.next/
+dist/
+build/
+.turbo/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# --- R ---
+.Rproj.user/
+*.Rproj
+
+# --- OS ---
+Thumbs.db
+desktop.ini
+.DS_Store
+nul
+*.tmp
+*.log
+*.bak
+*~
+.~lock.*
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Claude agent memory (session-specific, not shareable) ---
+.claude/agent-memory/
+**/.claude/agent-memory/
+
+# --- Backups ---
+backup/
+**/backup/

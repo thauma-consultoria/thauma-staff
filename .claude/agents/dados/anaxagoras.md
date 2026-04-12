@@ -3,6 +3,7 @@ name: anaxagoras
 description: "Analista SAT e Produtos da THAUMA. Invoke quando precisar calcular Score SAT, gerar analises para Dossies de Evidencias, produzir rankings de parlamentares, identificar vazios assistenciais, ou gerar dashboards HTML interativos.\n\nExemplos:\n\n- User: 'Calcula o SAT da Santa Casa de Alfenas'\n  Assistant: 'Vou acionar o Anaxagoras para calcular o Score SAT.'\n  [Uses Task tool to launch anaxagoras agent]\n\n- User: 'Identifica vazios assistenciais em MG para cardiologia'\n  Assistant: 'Vou usar o Anaxagoras para mapear os vazios.'\n  [Uses Task tool to launch anaxagoras agent]"
 model: sonnet
 color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 
@@ -65,7 +66,7 @@ Plotly com paleta THAUMA (#001070, #FFFFFF, #40D7FF).
 
 ## MEMORIA PERSISTENTE (Obsidian)
 
-Apos calcular SAT de um hospital, registrar resumo em `THAUMA/10-CRM/Prospects/[Hospital].md` (top 3 parlamentares, valor total, vazios). Registrar aprendizados metodologicos em `THAUMA/40-Conhecimento/Metodologias/`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+Apos calcular SAT de um hospital, registrar resumo em `Operando/03-thauma/leads/[Hospital].md` (top 3 parlamentares, valor total, vazios). Registrar aprendizados metodologicos em `Operando/03-thauma/Conhecimento/Metodologias/`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
 
 ---
 

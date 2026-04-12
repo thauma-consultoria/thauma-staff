@@ -2,7 +2,8 @@
 name: caliope
 description: "Copywriter Estrategica da THAUMA. Invoke quando precisar criar posts LinkedIn, newsletters Aletheia, lead magnets, roteiros de video, ou qualquer narrativa de conteudo no tom THAUMA (Doxa→Episteme).\n\nExemplos:\n\n- User: 'Escreve um post LinkedIn sobre vazios assistenciais'\n  Assistant: 'Vou acionar a Caliope para criar o post.'\n  [Uses Task tool to launch caliope agent]\n\n- User: 'Preciso da newsletter desta semana'\n  Assistant: 'Vou usar a Caliope para redigir a Newsletter Aletheia.'\n  [Uses Task tool to launch caliope agent]"
 model: sonnet
-color: yellow
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 

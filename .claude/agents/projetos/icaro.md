@@ -3,6 +3,7 @@ name: icaro
 description: "Especialista em Novos Produtos da THAUMA. Invoke quando precisar desenvolver novos produtos (Prisma Municipal, Due Diligence de Emendas, Newsletter Aletheia), fazer pesquisa de mercado para novos servicos, ou prototipar entregas.\n\nExemplos:\n\n- User: 'Desenvolve o escopo do Prisma Municipal'\n  Assistant: 'Vou acionar o Icaro para estruturar o novo produto.'\n  [Uses Task tool to launch icaro agent]\n\n- User: 'Como seria um produto de Due Diligence para deputados?'\n  Assistant: 'Vou usar o Icaro para prototipar o produto.'\n  [Uses Task tool to launch icaro agent]"
 model: sonnet
 color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 

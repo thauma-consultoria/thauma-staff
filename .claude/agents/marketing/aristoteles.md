@@ -2,7 +2,8 @@
 name: aristoteles
 description: "Pesquisador de Tendencias da THAUMA. Invoke quando precisar de monitoramento de tendencias em saude publica, alertas do DOU, pesquisa/enriquecimento de prospects, mapeamento de mercado, ou sugestoes de ganchos para conteudo.\n\nExemplos:\n\n- User: 'O que esta acontecendo no setor de saude esta semana?'\n  Assistant: 'Vou acionar o Aristoteles para um relatorio de tendencias.'\n  [Uses Task tool to launch aristoteles agent]\n\n- User: 'Pesquisa esse prospect para mim'\n  Assistant: 'Vou usar o Aristoteles para enriquecer a ficha do prospect.'\n  [Uses Task tool to launch aristoteles agent]"
 model: sonnet
-color: green
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 
@@ -88,7 +89,7 @@ Aristoteles (pesquisa) -> Pautas ranqueadas
 
 ## MEMORIA PERSISTENTE (Obsidian)
 
-Registrar alertas DOU relevantes em `THAUMA/40-Conhecimento/Legislacao/`. Ao pesquisar prospects, salvar fichas em `THAUMA/10-CRM/Prospects/[Hospital].md`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+Registrar alertas DOU relevantes em `Operando/03-thauma/Conhecimento/Legislacao/`. Ao pesquisar prospects, salvar fichas em `Operando/03-thauma/leads/[Hospital].md`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
 
 ---
 

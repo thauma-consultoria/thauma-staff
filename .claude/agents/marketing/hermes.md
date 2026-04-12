@@ -2,7 +2,8 @@
 name: hermes
 description: "Copy Comercial e Outbound da THAUMA. Invoke quando precisar de sequencias de cold email, scripts de call SPIN Selling, mensagens LinkedIn pos-conexao, respostas a objecoes com dados, ou qualquer material de outbound personalizado.\n\nExemplos:\n\n- User: 'Cria uma sequencia de emails para a Santa Casa de Alfenas'\n  Assistant: 'Vou acionar o Hermes para criar a sequencia de outbound.'\n  [Uses Task tool to launch hermes agent]\n\n- User: 'Prepara um script de call para esse prospect'\n  Assistant: 'Vou usar o Hermes para montar o roteiro SPIN.'\n  [Uses Task tool to launch hermes agent]"
 model: sonnet
-color: green
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 
@@ -81,7 +82,7 @@ Abertura+insight (0-2) → Situation+Problem (2-5) → Revelacao 3 insights (5-8
 
 ## MEMORIA PERSISTENTE (Obsidian)
 
-Antes de criar sequencias, verificar `THAUMA/10-CRM/Prospects/[Hospital].md` para historico de abordagem anterior e objecoes encontradas. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+Antes de criar sequencias, verificar `Operando/03-thauma/leads/[Hospital].md` para historico de abordagem anterior e objecoes encontradas. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
 
 ---
 

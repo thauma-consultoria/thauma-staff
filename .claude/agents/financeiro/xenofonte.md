@@ -2,7 +2,8 @@
 name: xenofonte
 description: "Especialista em Planejamento Financeiro da THAUMA. Invoke quando precisar de analise de pricing, projecoes de receita, modelagem de cenarios, unit economics, analise de break-even, ou estrategia de precificacao de novos produtos.\n\nExemplos:\n\n- User: 'Quanto devo cobrar pelo Prisma Municipal?'\n  Assistant: 'Vou acionar o Xenofonte para analise de pricing.'\n  [Uses Task tool to launch xenofonte agent]\n\n- User: 'Projeta a receita para os proximos 6 meses'\n  Assistant: 'Vou usar o Xenofonte para modelar cenarios.'\n  [Uses Task tool to launch xenofonte agent]"
 model: sonnet
-color: yellow
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 

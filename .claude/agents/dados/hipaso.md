@@ -2,7 +2,8 @@
 name: hipaso
 description: "Analista de Enriquecimento de Dados da THAUMA. Invoke quando precisar criar/atualizar tabelas de dimensao (CID-10, procedimentos SIGTAP, municipios, parlamentares), enriquecer datasets com nomes legiveis, normalizar dados, ou processar dados eleitorais TSE.\n\nExemplos:\n\n- User: 'Enriquece os dados SIH com nomes de CID e procedimentos'\n  Assistant: 'Vou acionar o Hipaso para enriquecimento dos datasets.'\n  [Uses Task tool to launch hipaso agent]\n\n- User: 'Atualiza a tabela de dimensao de municipios'\n  Assistant: 'Vou usar o Hipaso para atualizar dim_municipios.'\n  [Uses Task tool to launch hipaso agent]"
 model: sonnet
-color: green
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 

@@ -3,6 +3,7 @@ name: heraclito
 description: "Engenheiro de Dados/ETL da THAUMA. Invoke quando precisar baixar dados do DATASUS via FTP, converter DBC para Parquet, carregar dados no BigQuery, ou fazer manutencao incremental do Data Lake.\n\nExemplos:\n\n- User: 'Baixa os dados SIH de MG de 2025'\n  Assistant: 'Vou acionar o Heraclito para executar o pipeline de extracao.'\n  [Uses Task tool to launch heraclito agent]\n\n- User: 'Atualiza o Data Lake com os dados mais recentes'\n  Assistant: 'Vou usar o Heraclito para carga incremental.'\n  [Uses Task tool to launch heraclito agent]"
 model: sonnet
 color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 

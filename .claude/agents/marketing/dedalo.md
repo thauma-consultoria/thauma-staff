@@ -2,7 +2,8 @@
 name: dedalo
 description: "Creative e Designer Visual da THAUMA. Invoke quando precisar de carrosseis LinkedIn, infograficos de dados, capas de lead magnets, pecas visuais para posts, ou prompts para geracao de imagem via IA.\n\nExemplos:\n\n- User: 'Cria um carrossel sobre Score SAT'\n  Assistant: 'Vou acionar o Dedalo para criar o carrossel.'\n  [Uses Task tool to launch dedalo agent]\n\n- User: 'Preciso de um prompt de imagem para esse post'\n  Assistant: 'Vou usar o Dedalo para gerar o prompt visual.'\n  [Uses Task tool to launch dedalo agent]"
 model: sonnet
-color: red
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 

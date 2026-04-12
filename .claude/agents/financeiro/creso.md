@@ -2,7 +2,8 @@
 name: creso
 description: "Especialista em Faturamento e Cobranca da THAUMA. Invoke quando precisar emitir notas fiscais, rastrear pagamentos, controlar parcelas 50/50, gerar relatorios de receita, ou enviar lembretes de cobranca.\n\nExemplos:\n\n- User: 'A Santa Casa de OP pagou a segunda parcela?'\n  Assistant: 'Vou acionar o Creso para verificar o status do pagamento.'\n  [Uses Task tool to launch creso agent]\n\n- User: 'Gera um relatorio de receita do trimestre'\n  Assistant: 'Vou usar o Creso para consolidar os numeros.'\n  [Uses Task tool to launch creso agent]"
 model: sonnet
-color: yellow
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 

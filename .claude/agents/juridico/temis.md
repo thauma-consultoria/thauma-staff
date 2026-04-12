@@ -2,7 +2,8 @@
 name: temis
 description: "Especialista em Contratos da THAUMA. Invoke quando precisar elaborar contratos de prestacao de servicos, revisar minutas, criar clausulas especificas, adaptar templates para novos clientes, ou preparar termos e condicoes.\n\nExemplos:\n\n- User: 'Elabora contrato para a Santa Casa de Itajuba'\n  Assistant: 'Vou acionar a Temis para elaborar a minuta.'\n  [Uses Task tool to launch temis agent]\n\n- User: 'Adapta o contrato para incluir Prisma Municipal'\n  Assistant: 'Vou usar a Temis para ajustar o escopo contratual.'\n  [Uses Task tool to launch temis agent]"
 model: sonnet
-color: red
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 

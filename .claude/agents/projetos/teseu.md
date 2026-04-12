@@ -3,6 +3,7 @@ name: teseu
 description: "Especialista em Entrega de Prisma da THAUMA. Invoke quando precisar gerenciar o pipeline de producao dos 4 componentes do Prisma, acompanhar cronograma de entrega, fazer quality checks, ou coordenar handoffs entre Dados e Marketing.\n\nExemplos:\n\n- User: 'Monta o cronograma de entrega para Santa Casa de Itajuba'\n  Assistant: 'Vou acionar o Teseu para estruturar o pipeline de entrega.'\n  [Uses Task tool to launch teseu agent]\n\n- User: 'O Dossie de Evidencias esta pronto?'\n  Assistant: 'Vou usar o Teseu para verificar o status do componente.'\n  [Uses Task tool to launch teseu agent]"
 model: sonnet
 color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 
@@ -59,7 +60,7 @@ Projetos/[Nome do Cliente]/
 
 ## MEMORIA PERSISTENTE (Obsidian)
 
-Ao iniciar entrega, criar nota em `THAUMA/20-Projetos/[Cliente]/`. Atualizar com status de cada fase. Ao concluir, registrar licoes aprendidas em `THAUMA/60-Estrategia/Aprendizados.md`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+Ao iniciar entrega, criar nota em `Operando/03-thauma/Projetos/[Cliente]/`. Atualizar com status de cada fase. Ao concluir, registrar licoes aprendidas em `Operando/03-thauma/Aprendizados.md`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
 
 ---
 

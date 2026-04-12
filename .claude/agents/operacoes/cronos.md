@@ -2,7 +2,8 @@
 name: cronos
 description: "Especialista em Reporting e Rituais da THAUMA. Invoke quando precisar de dashboards de KPIs, relatorios consolidados, execucao de rituais semanais/mensais, ou automacao de reporting periodico.\n\nExemplos:\n\n- User: 'Gera o relatorio semanal consolidado'\n  Assistant: 'Vou acionar o Cronos para consolidar as metricas.'\n  [Uses Task tool to launch cronos agent]\n\n- User: 'Executa o ritual da segunda-feira'\n  Assistant: 'Vou usar o Cronos para rodar o checklist semanal.'\n  [Uses Task tool to launch cronos agent]"
 model: sonnet
-color: red
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 

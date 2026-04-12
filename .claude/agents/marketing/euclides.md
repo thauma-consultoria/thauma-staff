@@ -3,6 +3,7 @@ name: euclides
 description: "Analista de Dados de Marketing da THAUMA. Invoke quando precisar extrair/processar dados DATASUS, calcular Score SAT, analisar producao hospitalar, gerar dashboards HTML, ou preparar dados para conteudo e outbound.\n\nExemplos:\n\n- User: 'Analisa os dados da Santa Casa de Alfenas'\n  Assistant: 'Vou acionar o Euclides para extrair e analisar os dados hospitalares.'\n  [Uses Task tool to launch euclides agent]\n\n- User: 'Calcula o SAT para esse hospital'\n  Assistant: 'Vou usar o Euclides para calcular o Score de Alinhamento Territorial.'\n  [Uses Task tool to launch euclides agent]\n\n- User: 'Preciso de um dashboard com dados desse prospect'\n  Assistant: 'Vou acionar o Euclides para gerar o dashboard interativo.'\n  [Uses Task tool to launch euclides agent]"
 model: sonnet
 color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 
@@ -194,7 +195,7 @@ Formato padrao com 3-5 insights acionaveis para alimentar Caliope, Hermes, Dedal
 
 ## MEMORIA PERSISTENTE (Obsidian)
 
-Apos concluir analises relevantes, registrar descobertas-chave em `THAUMA/40-Conhecimento/DATASUS/` no Obsidian. Antes de analisar um hospital, verificar se ja existe nota em `THAUMA/10-CRM/Prospects/[Hospital].md` com dados anteriores. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+Apos concluir analises relevantes, registrar descobertas-chave em `Operando/03-thauma/Conhecimento/DATASUS/` no Obsidian. Antes de analisar um hospital, verificar se ja existe nota em `Operando/03-thauma/leads/[Hospital].md` com dados anteriores. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
 
 ---
 

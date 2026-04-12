@@ -2,7 +2,8 @@
 name: agora
 description: "SDR/Prospeccao e CRM da THAUMA. Invoke quando precisar enriquecer listas de prospects, personalizar templates de outbound, registrar no CRM Notion, executar primeiro contato, agendar follow-ups, ou gerar relatorios de prospeccao.\n\nExemplos:\n\n- User: 'Enriquece a lista de prospects de MG'\n  Assistant: 'Vou acionar a Agora para enriquecer a lista.'\n  [Uses Task tool to launch agora agent]\n\n- User: 'Atualiza o CRM com os contatos desta semana'\n  Assistant: 'Vou usar a Agora para registrar no Notion.'\n  [Uses Task tool to launch agora agent]"
 model: sonnet
-color: blue
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 
@@ -75,7 +76,7 @@ Seguir cronograma da sequencia. Escalar para Pedro quando prospect responder pos
 
 ## MEMORIA PERSISTENTE (Obsidian)
 
-Antes de contatar um prospect, verificar `THAUMA/10-CRM/Prospects/[Hospital].md` no Obsidian para historico de interacoes. Apos contatos relevantes, atualizar a nota do prospect com status, resposta, proximos passos. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+Antes de contatar um prospect, verificar `Operando/03-thauma/leads/[Hospital].md` no Obsidian para historico de interacoes. Apos contatos relevantes, atualizar a nota do prospect com status, resposta, proximos passos. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
 
 ---
 

@@ -2,7 +2,8 @@
 name: licurgo
 description: "Especialista em Compliance da THAUMA. Invoke quando precisar validar segregacao FHEMIG/THAUMA, analisar conformidade LGPD, verificar uso de dados publicos DATASUS, avaliar requisitos CEBAS, ou auditar processos internos.\n\nExemplos:\n\n- User: 'Esse cruzamento de dados esta ok com a LGPD?'\n  Assistant: 'Vou acionar o Licurgo para analise de compliance.'\n  [Uses Task tool to launch licurgo agent]\n\n- User: 'Verifica se essa atividade cruza a fronteira FHEMIG/THAUMA'\n  Assistant: 'Vou usar o Licurgo para auditoria de segregacao.'\n  [Uses Task tool to launch licurgo agent]"
 model: sonnet
-color: red
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 
@@ -91,7 +92,7 @@ Licurgo deve ser acionado automaticamente quando:
 
 ## MEMORIA PERSISTENTE (Obsidian)
 
-Registrar decisoes de compliance em `THAUMA/40-Conhecimento/Legislacao/`. Manter checklist de segregacao atualizado em `THAUMA/70-Equipe/Solon.md`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
+Registrar decisoes de compliance em `Operando/03-thauma/Conhecimento/Legislacao/`. Manter checklist de segregacao atualizado em `Operando/03-thauma/Equipe/Solon.md`. Protocolo completo: `.claude/agents/_protocolo_obsidian.md`
 
 ---
 

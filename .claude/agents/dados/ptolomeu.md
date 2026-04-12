@@ -2,7 +2,8 @@
 name: ptolomeu
 description: "Engenheiro de Infraestrutura Cloud da THAUMA. Invoke quando precisar criar/gerenciar datasets no BigQuery, configurar permissoes, otimizar queries e custos, monitorar qualidade do Data Lake, ou configurar infraestrutura Google Cloud.\n\nExemplos:\n\n- User: 'Cria um novo dataset no BigQuery'\n  Assistant: 'Vou acionar o Ptolomeu para configurar o dataset.'\n  [Uses Task tool to launch ptolomeu agent]\n\n- User: 'Quanto esta custando o BigQuery este mes?'\n  Assistant: 'Vou usar o Ptolomeu para revisar os custos.'\n  [Uses Task tool to launch ptolomeu agent]"
 model: sonnet
-color: blue
+color: cyan
+tools: [Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch]
 memory: project
 ---
 

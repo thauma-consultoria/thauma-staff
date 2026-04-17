@@ -1,31 +1,31 @@
-# PROTOCOLO DE MEMORIA OBSIDIAN — THAUMA
+# PROTOCOLO DE MEMÓRIA OBSIDIAN — THAUMA
 
 ## Vault
 
 **Caminho:** `C:\Users\pedro\Documents\mente`
 
-Este e o vault pessoal do Pedro. A THAUMA opera dentro da pasta `Operando\03-thauma\` neste vault.
+Este é o vault pessoal do Pedro. A THAUMA opera dentro da pasta `Operando\03-thauma\` neste vault.
 
-**Acesso:** Direto via filesystem (Read, Write, Edit). Nao usa MCP — sao arquivos markdown locais.
+**Acesso:** Direto via filesystem (Read, Write, Edit). Não usa MCP — são arquivos markdown locais.
 
-## Proposito
+## Propósito
 
-O Obsidian e a **memoria persistente entre sessoes** de toda a equipe THAUMA. Como agentes de IA, nosso contexto se perde ao final de cada conversa. O Obsidian resolve isso: tudo que for importante, estrategico ou necessario para continuidade deve ser registrado la.
+O Obsidian é a **memória persistente entre sessões** de toda a equipe THAUMA. Como agentes de IA, nosso contexto se perde ao final de cada conversa. O Obsidian resolve isso: tudo que for importante, estratégico ou necessário para continuidade deve ser registrado lá.
 
 ## Estrutura Real no Vault
 
 ```
 Operando/03-thauma/
-├── Socrates.md                    (diario do CEO — sessoes e decisoes estrategicas)
-├── Decisoes.md                    (registro de decisoes estrategicas com data e razao)
-├── Aprendizados.md                (licoes aprendidas de operacao)
+├── Socrates.md                    (diário do CEO — sessões e decisões estratégicas)
+├── Decisoes.md                    (registro de decisões estratégicas com data e razão)
+├── Aprendizados.md                (lições aprendidas de operação)
 ├── Ideias Thauma.md               (backlog de ideias)
-├── Roadmap Financeiro Thauma.md   (direcao de longo prazo)
-├── Tarefas Thauma.md              (inbox de captura rapida)
-├── CRM - Leads.md                 (visao kanban do funil)
-├── Planos/                        (planos de correcao e estrategia)
+├── Roadmap Financeiro Thauma.md   (direção de longo prazo)
+├── Tarefas Thauma.md              (inbox de captura rápida)
+├── CRM - Leads.md                 (visão kanban do funil)
+├── Planos/                        (planos de correção e estratégia)
 ├── leads/                         (uma nota por hospital prospect)
-├── Equipe/                        (notas de contexto entre sessoes por gerente)
+├── Equipe/                        (notas de contexto entre sessões por gerente)
 │   ├── Pericles.md
 │   ├── Pitagoras.md
 │   ├── Solon.md
@@ -38,76 +38,76 @@ Operando/03-thauma/
 ├── Conhecimento/
 │   ├── DATASUS/                   (aprendizados sobre bases)
 │   ├── Legislacao/                (portarias, regulamentos)
-│   ├── Emendas/                   (ciclo orcamentario, janelas)
+│   ├── Emendas/                   (ciclo orçamentário, janelas)
 │   └── Metodologias/              (SAT, SPIN, frameworks)
 └── Tarefas/                       (planos semanais/mensais)
 ```
 
-**Observacao:** A estrutura real do vault e FLAT na raiz (Socrates.md, Decisoes.md etc. direto). As subpastas `Equipe/`, `Clientes/`, `Projetos/`, `Reunioes/`, `Conhecimento/`, `Tarefas/` sao criadas sob demanda — quando um agente precisa escrever uma nota la pela primeira vez, ele cria a pasta.
+**Observação:** A estrutura real do vault é FLAT na raiz (Socrates.md, Decisoes.md etc. direto). As subpastas `Equipe/`, `Clientes/`, `Projetos/`, `Reunioes/`, `Conhecimento/`, `Tarefas/` são criadas sob demanda — quando um agente precisa escrever uma nota lá pela primeira vez, ele cria a pasta.
 
 ## Regras de Uso
 
 ### O que SALVAR no Obsidian
 
-1. **Decisoes estrategicas** — Pedro decidiu X porque Y. Data: AAAA-MM-DD.
-2. **Aprendizados de operacao** — "Conexoes quentes convertem 100%, cold perto de 0%"
-3. **Contexto de prospects** — Estado da negociacao, ultima interacao, proximos passos
-4. **Estado entre sessoes** — "Paramos aqui: [contexto]. Proxima sessao: [o que fazer]"
-5. **Insights de dados** — Descobertas analiticas que informam futuras analises
-6. **Feedback do Pedro** — Preferencias, correcoes, validacoes
+1. **Decisões estratégicas** — Pedro decidiu X porque Y. Data: AAAA-MM-DD.
+2. **Aprendizados de operação** — "Conexões quentes convertem 100%, cold perto de 0%"
+3. **Contexto de prospects** — Estado da negociação, última interação, próximos passos
+4. **Estado entre sessões** — "Paramos aqui: [contexto]. Próxima sessão: [o que fazer]"
+5. **Insights de dados** — Descobertas analíticas que informam futuras análises
+6. **Feedback do Pedro** — Preferências, correções, validações
 
-### O que NAO salvar no Obsidian
+### O que NÃO salvar no Obsidian
 
 - Dados brutos ou datasets (ficam no Data Lake/BigQuery)
-- Conteudo gerado (posts, emails — ficam em outputs/)
+- Conteúdo gerado (posts, emails — ficam em outputs/)
 - Contratos e documentos formais (ficam no Google Drive)
-- Codigo e scripts (ficam no repo Git)
+- Código e scripts (ficam no repo Git)
 
 ### Como SALVAR
 
-Formato padrao para notas de memoria:
+Formato padrão para notas de memória:
 
 ```markdown
-# [Titulo Descritivo]
+# [Título Descritivo]
 
 **Data:** AAAA-MM-DD
 **Agente:** [Nome do agente]
-**Contexto:** [Por que isso esta sendo registrado]
+**Contexto:** [Por que isso está sendo registrado]
 
-## Conteudo
+## Conteúdo
 
 [O que foi decidido/aprendido/observado]
 
-## Implicacoes
+## Implicações
 
-[Como isso afeta decisoes futuras]
+[Como isso afeta decisões futuras]
 
-## Proximos Passos
+## Próximos Passos
 
-[O que fazer com essa informacao]
+[O que fazer com essa informação]
 ```
 
 ### Como LER
 
-**No inicio de cada sessao relevante:**
-1. Ler `Operando/03-thauma/Equipe/[SeuNome].md` — seu contexto entre sessoes (Socrates le `Socrates.md` direto na raiz)
-2. Ler `Operando/03-thauma/Decisoes.md` — decisoes recentes
+**No início de cada sessão relevante:**
+1. Ler `Operando/03-thauma/Equipe/[SeuNome].md` — seu contexto entre sessões (Sócrates lê `Socrates.md` direto na raiz)
+2. Ler `Operando/03-thauma/Decisoes.md` — decisões recentes
 3. Se trabalhando com prospect: ler `Operando/03-thauma/leads/[Hospital].md`
 4. Se em entrega: ler `Operando/03-thauma/Projetos/[Cliente]/`
 
-### Frequencia de Escrita
+### Frequência de Escrita
 
 | Agente | Quando escrever |
 |--------|----------------|
-| **Socrates (CEO, Claude principal)** | Apos toda sessao estrategica com Pedro |
-| **Orchestrators (6 gerentes)** | Ao final de tarefas multi-sessao |
+| **Sócrates (CEO, Claude principal)** | Após toda sessão estratégica com Pedro |
+| **Orchestrators (6 gerentes)** | Ao final de tarefas multi-sessão |
 | **Sub-agentes (17 especialistas)** | Quando descobrirem algo que outros agentes precisam saber |
 
-## Convencao de Nomes
+## Convenção de Nomes
 
-- Notas de reuniao: `Reunioes/[AAAA-MM-DD] [Assunto].md`
+- Notas de reunião: `Reunioes/[AAAA-MM-DD] [Assunto].md`
 - Notas de prospect: `leads/[Nome do Hospital].md`
 - Notas de projeto: `Projetos/[Nome do Cliente] - [Fase].md`
 - Notas de contexto de gerente: `Equipe/[Nome].md`
-- Decisoes: append ao `Decisoes.md` existente (nao criar novo arquivo)
+- Decisões: append ao `Decisoes.md` existente (não criar novo arquivo)
 - Planos: `Planos/[Nome do Plano].md`

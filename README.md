@@ -2,13 +2,13 @@
 
 # THAUMA
 
-### Inteligencia & Narrativa em Saude
+### Inteligência & Narrativa em Saúde
 
-**Equipe Multiagente de IA para Consultoria em Saude Publica**
+**Equipe Multiagente de IA para Consultoria em Saúde Pública**
 
 ---
 
-`#001070` **Azul Profundo** | `#FFFFFF` **Branco** | `#40D7FF` **Ciano Tecnologico**
+`#001070` **Azul Profundo** | `#FFFFFF` **Branco** | `#40D7FF` **Ciano Tecnológico**
 
 ---
 
@@ -20,19 +20,19 @@
 
 ---
 
-## O que e a THAUMA
+## O que é a THAUMA
 
-A **THAUMA** e uma consultoria que promove ganho de eficiencia, escala, qualidade e profissionalismo para gestores de saude publica e prestadores de servico no SUS, por meio de tecnologia, inteligencia artificial e dados publicos de saude.
+A **THAUMA** é uma consultoria que promove ganho de eficiência, escala, qualidade e profissionalismo para gestores de saúde pública e prestadores de serviço no SUS, por meio de tecnologia, inteligência artificial e dados públicos de saúde.
 
-Organizamos dados e construimos narrativas, ferramentas e processos para players da area da saude — conduzindo-os da **Doxa** (opiniao, amadorismo) a **Episteme** (conhecimento verdadeiro, ciencia aplicada).
+Organizamos dados e construímos narrativas, ferramentas e processos para players da área da saúde — conduzindo-os da **Doxa** (opinião, amadorismo) à **Episteme** (conhecimento verdadeiro, ciência aplicada).
 
-**Fundacao:** Dezembro de 2025 | **Socios:** Pedro William Ribeiro Diniz, Vinicius de Paula Prudente Aquino, Bruno Volpini Guimaraes
+**Fundação:** Dezembro de 2025 | **Sócios:** Pedro William Ribeiro Diniz, Vinícius de Paula Prudente Aquino, Bruno Volpini Guimarães
 
-> *"O espanto da descoberta. A ciencia do resultado."*
+> *"O espanto da descoberta. A ciência do resultado."*
 
-### O que este repositorio contem
+### O que este repositório contém
 
-Este e o **cerebro operacional** da THAUMA: uma equipe de 25 agentes de IA organizados em 6 departamentos, operando via [Claude Code](https://claude.ai/code). Cada agente e um arquivo `.md` com identidade, responsabilidades e protocolos definidos.
+Este é o **cérebro operacional** da THAUMA: uma equipe de 25 agentes de IA organizados em 6 departamentos, operando via [Claude Code](https://claude.ai/code). Cada agente é um arquivo `.md` com identidade, responsabilidades e protocolos definidos.
 
 ---
 
@@ -43,7 +43,7 @@ Este e o **cerebro operacional** da THAUMA: uma equipe de 25 agentes de IA organ
 <td width="50%" align="center">
 
 ### DOXA (antes)
-*Opiniao subjetiva*
+*Opinião subjetiva*
 
 "Precisamos de ajuda porque atendemos muita gente"
 
@@ -53,7 +53,7 @@ Este e o **cerebro operacional** da THAUMA: uma equipe de 25 agentes de IA organ
 ### EPISTEME (depois)
 *Conhecimento verdadeiro*
 
-"Atendemos 12.847 pacientes de 47 municipios, gerando R$47M em custo evitado ao SUS"
+"Atendemos 12.847 pacientes de 47 municípios, gerando R$47M em custo evitado ao SUS"
 
 </td>
 </tr>
@@ -61,12 +61,12 @@ Este e o **cerebro operacional** da THAUMA: uma equipe de 25 agentes de IA organ
 
 ### Os 4 Dogmas
 
-| Dogma | Principio | Aplicacao |
+| Dogma | Princípio | Aplicação |
 |:------|:----------|:----------|
-| **ALETHEIA** (Verdade) | Nunca maquiar dados | Todo numero e rastreavel e verificavel |
-| **LOGOS** (Razao) | Logica estruturada | Cada conclusao deriva de premissas verificaveis |
-| **TECHNE** (Tecnica) | IA como ferramenta de excelencia | Automacao do que o cerebro humano nao faz em tempo habil |
-| **PRAXIS** (Acao) | Conhecimento gera resultado concreto | O foco e o recurso captado, nao o relatorio bonito |
+| **ALETHEIA** (Verdade) | Nunca maquiar dados | Todo número é rastreável e verificável |
+| **LOGOS** (Razão) | Lógica estruturada | Cada conclusão deriva de premissas verificáveis |
+| **TECHNE** (Técnica) | IA como ferramenta de excelência | Automação do que o cérebro humano não faz em tempo hábil |
+| **PRAXIS** (Ação) | Conhecimento gera resultado concreto | O foco é o recurso captado, não o relatório bonito |
 
 ---
 
@@ -77,15 +77,15 @@ Este e o **cerebro operacional** da THAUMA: uma equipe de 25 agentes de IA organ
                               (Fundador)
                                   |
                     ┌─────────────┴─────────────┐
-                    │      SOCRATES (CEO)        │
-                    │   Conselheiro Estrategico   │
+                    │      SÓCRATES (CEO)        │
+                    │   Conselheiro Estratégico   │
                     └─────────────┬─────────────┘
                                   |
           ┌───────────┬───────────┼───────────┬───────────┬───────────┐
           |           |           |           |           |           |
     ┌─────┴─────┐┌────┴────┐┌────┴────┐┌─────┴─────┐┌────┴────┐┌────┴────┐
-    │ PERICLES  ││PITAGORAS││  SOLON  ││   TALES   ││ARQUIMEDE││ HEFESTO │
-    │ Marketing ││  Dados  ││Juridico ││Financeiro ││ Projetos││Operacoes│
+    │ PÉRICLES  ││PITÁGORAS││  SÓLON  ││   TALES   ││ARQUIMEDE││ HEFESTO │
+    │ Marketing ││  Dados  ││Jurídico ││Financeiro ││ Projetos││Operações│
     └─────┬─────┘└────┬────┘└────┬────┘└─────┬─────┘└────┬────┘└────┬────┘
           |           |          |            |           |          |
      6 agentes   4 agentes  2 agentes   2 agentes   2 agentes  2 agentes
@@ -95,160 +95,160 @@ Este e o **cerebro operacional** da THAUMA: uma equipe de 25 agentes de IA organ
 
 ## Departamentos
 
-### Marketing — Pericles
+### Marketing — Péricles
 
-> *A maquina de inbound, outbound e posicionamento de autoridade.*
+> *A máquina de inbound, outbound e posicionamento de autoridade.*
 
 | Agente | Papel |
 |:-------|:------|
 | **Euclides** | Analista de Dados — DATASUS, Score SAT, dashboards |
-| **Aristoteles** | Pesquisador de Tendencias — DOU, mercado, ganchos |
-| **Caliope** | Copywriter Estrategica — posts LinkedIn, Newsletter Aletheia |
-| **Dedalo** | Creative — carrosseis, infograficos, identidade visual |
+| **Aristóteles** | Pesquisador de Tendências — DOU, mercado, ganchos |
+| **Calíope** | Copywriter Estratégica — posts LinkedIn, Newsletter Aletheia |
+| **Dédalo** | Creative — carrosséis, infográficos, identidade visual |
 | **Hermes** | Copy Comercial — cold emails, scripts SPIN, outbound |
-| **Agora** | Prospeccao & CRM — enriquecimento, Notion, follow-ups |
+| **Ágora** | Prospecção & CRM — enriquecimento, Notion, follow-ups |
 
-**Cadeia de producao:**
+**Cadeia de produção:**
 ```
-Inbound:  Aristoteles → Euclides → Caliope → Dedalo
-Outbound: Euclides → Hermes → Agora
+Inbound:  Aristóteles → Euclides → Calíope → Dédalo
+Outbound: Euclides → Hermes → Ágora
 ```
 
 ---
 
-### Dados — Pitagoras
+### Dados — Pitágoras
 
-> *O guardiao do Data Lake. Sem dados limpos, nao ha Episteme.*
+> *O guardião do Data Lake. Sem dados limpos, não há Episteme.*
 
 | Agente | Papel |
 |:-------|:------|
-| **Heraclito** | Engenheiro de Dados — ETL, FTP DATASUS, DBC→Parquet→BigQuery |
-| **Hipaso** | Enriquecimento — CID-10, SIGTAP, municipios, TSE |
-| **Anaxagoras** | SAT & Analytics — Score SAT, rankings, vazios assistenciais |
+| **Heráclito** | Engenheiro de Dados — ETL, FTP DATASUS, DBC→Parquet→BigQuery |
+| **Hipaso** | Enriquecimento — CID-10, SIGTAP, municípios, TSE |
+| **Anaxágoras** | SAT & Analytics — Score SAT, rankings, vazios assistenciais |
 | **Ptolomeu** | Infra Cloud — BigQuery admin, custos, performance |
 
 **Pipeline:**
 ```
-DATASUS (FTP) → Heraclito (ETL) → Hipaso (enriquece) → Anaxagoras (analisa) → Marketing (consome)
+DATASUS (FTP) → Heráclito (ETL) → Hipaso (enriquece) → Anaxágoras (analisa) → Marketing (consome)
 ```
 
 ---
 
-### Juridico — Solon
+### Jurídico — Sólon
 
-> *Proteger sem paralisar. Viabilizar negocios com seguranca.*
+> *Proteger sem paralisar. Viabilizar negócios com segurança.*
 
 | Agente | Papel |
 |:-------|:------|
-| **Temis** | Contratos — elaboracao, revisao, templates |
-| **Licurgo** | Compliance — segregacao FHEMIG/THAUMA, LGPD, CEBAS |
+| **Têmis** | Contratos — elaboração, revisão, templates |
+| **Licurgo** | Compliance — segregação FHEMIG/THAUMA, LGPD, CEBAS |
 
 ---
 
 ### Financeiro — Tales
 
-> *Rigor analitico com visao de negocio.*
+> *Rigor analítico com visão de negócio.*
 
 | Agente | Papel |
 |:-------|:------|
-| **Creso** | Faturamento & Cobranca — parcelas, notas, fluxo de caixa |
-| **Xenofonte** | Planejamento — pricing, projecoes, unit economics |
+| **Creso** | Faturamento & Cobrança — parcelas, notas, fluxo de caixa |
+| **Xenofonte** | Planejamento — pricing, projeções, unit economics |
 
 ---
 
 ### Projetos — Arquimedes
 
-> *A alavanca que transforma inteligencia em entregaveis concretos.*
+> *A alavanca que transforma inteligência em entregáveis concretos.*
 
 | Agente | Papel |
 |:-------|:------|
 | **Teseu** | Entrega de Prisma — pipeline dos 4 componentes, quality check |
-| **Icaro** | Novos Produtos — Prisma Municipal, Due Diligence, Newsletter |
+| **Ícaro** | Novos Produtos — Prisma Municipal, Due Diligence, Newsletter |
 
 ---
 
-### Operacoes — Hefesto
+### Operações — Hefesto
 
-> *O ferreiro que constroi as ferramentas dos deuses.*
+> *O ferreiro que constrói as ferramentas dos deuses.*
 
 | Agente | Papel |
 |:-------|:------|
-| **Atlas** | Integracoes & Automacoes — MCP, Notion, Obsidian, Drive |
+| **Atlas** | Integrações & Automações — MCP, Notion, Obsidian, Drive |
 | **Cronos** | Reporting & Rituais — KPIs, dashboards, rituais semanais |
 
 ---
 
-## Produto Principal: Prisma de Captacao
+## Produto Principal: Prisma de Captação
 
-O Prisma recebe a **luz branca** (dados brutos) e a decompoe no **espectro visivel** (oportunidades acionaveis).
+O Prisma recebe a **luz branca** (dados brutos) e a decompõe no **espectro visível** (oportunidades acionáveis).
 
-| # | Componente | Descricao | Responsavel |
+| # | Componente | Descrição | Responsável |
 |:-:|:-----------|:----------|:------------|
-| 1 | **Dossie de Evidencias** | Analise epidemiologica + impacto regional + ROI politico (40-60 pgs) | Pitagoras → Pericles |
-| 2 | **Radar Politico** | Dashboard DATASUS x TSE + Top 10 Parlamentares via Score SAT | Anaxagoras → Euclides |
-| 3 | **Dialetica de Convencimento** | Pitch deck personalizado por parlamentar (15-20 slides) | Caliope + Dedalo |
-| 4 | **Retorica da Influencia** | Playbook com roteiros, objecoes, cronograma (20-30 pgs) | Hermes |
+| 1 | **Dossiê de Evidências** | Análise epidemiológica + impacto regional + ROI político (40-60 pgs) | Pitágoras → Péricles |
+| 2 | **Radar Político** | Dashboard DATASUS x TSE + Top 10 Parlamentares via Score SAT | Anaxágoras → Euclides |
+| 3 | **Dialética de Convencimento** | Pitch deck personalizado por parlamentar (15-20 slides) | Calíope + Dédalo |
+| 4 | **Retórica da Influência** | Playbook com roteiros, objeções, cronograma (20-30 pgs) | Hermes |
 
-**Investimento:** R$ 24.000 – R$ 26.000 | **Prazo:** 20-30 dias uteis
+**Investimento:** R$ 24.000 – R$ 26.000 | **Prazo:** 20-30 dias úteis
 
-### Inteligencia Assistencial (BI as a Service)
+### Inteligência Assistencial (BI as a Service)
 
-Dashboards, relatorios e tratamento de dados DATASUS para hospitais que nao tem equipe de analytics.
+Dashboards, relatórios e tratamento de dados DATASUS para hospitais que não têm equipe de analytics.
 
 | Entrega | Investimento |
 |:--------|:-------------|
 | Setup de dashboard completo | R$ 4.000 – R$ 5.000 |
-| Nutricao mensal | R$ 1.500/mes |
+| Nutrição mensal | R$ 1.500/mês |
 
-**Logica:** O Prisma abre a porta (projeto de impacto), o BI constroi a recorrencia.
+**Lógica:** O Prisma abre a porta (projeto de impacto), o BI constrói a recorrência.
 
 ### Score SAT (Score de Alinhamento Territorial)
 
-Formula proprietaria que cruza base eleitoral do parlamentar com pacientes atendidos pelo hospital:
+Fórmula proprietária que cruza base eleitoral do parlamentar com pacientes atendidos pelo hospital:
 
 ```
-SAT = (Votos do Parlamentar no Municipio / 1.000) x (Pacientes do Municipio / 100)
+SAT = (Votos do Parlamentar no Município / 1.000) x (Pacientes do Município / 100)
 ```
 
 ---
 
-## Estrutura do Repositorio
+## Estrutura do Repositório
 
 ```
 thauma-staff/
 ├── .claude/
 │   └── agents/
-│       ├── ceo.md                    Socrates — CEO & Conselheiro
-│       ├── _protocolo_obsidian.md    Protocolo de memoria persistente
+│       ├── ceo.md                    Sócrates — CEO & Conselheiro
+│       ├── _protocolo_obsidian.md    Protocolo de memória persistente
 │       │
-│       ├── marketing/                Pericles + 6 agentes
-│       ├── dados/                    Pitagoras + 4 agentes
-│       ├── juridico/                 Solon + 2 agentes
+│       ├── marketing/                Péricles + 6 agentes
+│       ├── dados/                    Pitágoras + 4 agentes
+│       ├── juridico/                 Sólon + 2 agentes
 │       ├── financeiro/               Tales + 2 agentes
 │       ├── projetos/                 Arquimedes + 2 agentes
 │       ├── operacoes/                Hefesto + 2 agentes
 │       └── _archive/                 Agentes legados preservados
 │
-├── CLAUDE.md                         Instrucoes raiz do projeto
+├── CLAUDE.md                         Instruções raiz do projeto
 ├── README.md                         Este arquivo
-└── .gitignore                        Protecao de credenciais e dados
+└── .gitignore                        Proteção de credenciais e dados
 ```
 
-**Convencao:** Cada departamento tem um `_orchestrator.md` (modelo Opus) que coordena sub-agentes (modelo Sonnet).
+**Convenção:** Cada departamento tem um `_orchestrator.md` (modelo Opus) que coordena sub-agentes (modelo Sonnet).
 
 ---
 
-## Stack Tecnologico
+## Stack Tecnológico
 
 | Camada | Ferramentas |
 |:-------|:------------|
 | **Agentes IA** | Claude Code (Opus + Sonnet), Claude API |
 | **Dados** | R (tidyverse, microdatasus), Python (pandas, polars), SQL |
 | **Data Lake** | Google BigQuery (`thauma-datalake`) |
-| **Visualizacao** | Plotly, D3.js, Leaflet, Power BI |
+| **Visualização** | Plotly, D3.js, Leaflet, Power BI |
 | **CRM** | Notion (externo) + Obsidian (interno) |
-| **Automacao** | MCP Servers (Notion, Brave Search, Firecrawl, Gemini) |
-| **Repositorio** | GitHub (`thauma-consultoria/thauma-staff`) |
+| **Automação** | MCP Servers (Notion, Brave Search, Firecrawl, Gemini) |
+| **Repositório** | GitHub (`thauma-consultoria/thauma-staff`) |
 
 ---
 
@@ -256,23 +256,23 @@ thauma-staff/
 
 | Base | Uso |
 |:-----|:----|
-| **DATASUS** (SIH/SIA) | Producao hospitalar — internacoes, ambulatorio |
-| **TSE** | Dados eleitorais por municipio |
-| **CNES** | Cadastro de estabelecimentos de saude |
-| **IBGE** | Dados geograficos e socioeconomicos |
-| **SIGTAP** | Codigos e valores de procedimentos SUS |
+| **DATASUS** (SIH/SIA) | Produção hospitalar — internações, ambulatório |
+| **TSE** | Dados eleitorais por município |
+| **CNES** | Cadastro de estabelecimentos de saúde |
+| **IBGE** | Dados geográficos e socioeconômicos |
+| **SIGTAP** | Códigos e valores de procedimentos SUS |
 | **DOU** | Portarias e oportunidades de financiamento |
 
 ---
 
 ## Como Funciona
 
-1. **Pedro** abre o Claude Code em qualquer maquina com acesso ao repo
-2. **Socrates** (CEO) faz `git pull` para sincronizar
-3. Pedro descreve a tarefa — Socrates identifica qual departamento acionar
+1. **Pedro** abre o Claude Code em qualquer máquina com acesso ao repo
+2. **Sócrates** (CEO) faz `git pull` para sincronizar
+3. Pedro descreve a tarefa — Sócrates identifica qual departamento acionar
 4. O **orchestrator** do departamento coordena seus sub-agentes
-5. Ao final, Socrates faz `git commit + push` e atualiza o Obsidian
-6. Continuidade garantida em qualquer sessao futura, de qualquer lugar
+5. Ao final, Sócrates faz `git commit + push` e atualiza o Obsidian
+6. Continuidade garantida em qualquer sessão futura, de qualquer lugar
 
 ---
 
@@ -283,17 +283,17 @@ thauma-staff/
 | Cor | Hex | Uso |
 |:----|:----|:----|
 | **Azul Profundo** | `#001070` | Base estrutural (60-70%) |
-| **Branco Absoluto** | `#FFFFFF` | Espaco de clareza (20-30%) |
-| **Ciano Tecnologico** | `#40D7FF` | Destaques reveladores (5-10%) |
+| **Branco Absoluto** | `#FFFFFF` | Espaço de clareza (20-30%) |
+| **Ciano Tecnológico** | `#40D7FF` | Destaques reveladores (5-10%) |
 
-**Tipografia:** Helvetica Bold/Medium (titulos) | Hahmlet Regular (corpo) | Hahmlet Bold (dados)
+**Tipografia:** Helvetica Bold/Medium (títulos) | Hahmlet Regular (corpo) | Hahmlet Bold (dados)
 
 ---
 
-**THAUMA Inteligencia & Narrativa em Saude**
+**THAUMA Inteligência & Narrativa em Saúde**
 
-*"O espanto da descoberta. A ciencia do resultado."*
+*"O espanto da descoberta. A ciência do resultado."*
 
-Fundadores: **Pedro William Ribeiro Diniz** | **Vinicius de Paula Prudente Aquino** | **Bruno Volpini Guimaraes**
+Fundadores: **Pedro William Ribeiro Diniz** | **Vinícius de Paula Prudente Aquino** | **Bruno Volpini Guimarães**
 
 </div>

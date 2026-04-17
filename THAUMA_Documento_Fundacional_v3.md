@@ -1,27 +1,27 @@
 # THAUMA: DOCUMENTO FUNDACIONAL
-## Inteligencia & Narrativa em Saude
+## Inteligência & Narrativa em Saúde
 
-**Versao 3.0 | Abril 2026**
-*Construido a partir de entrevista fundacional com o CEO Socrates*
-*Documento Estrategico Proprietario*
+**Versão 3.0 | Abril 2026**
+*Construído a partir de entrevista fundacional com o CEO Sócrates*
+*Documento Estratégico Proprietário*
 
 ---
 
-## INDICE
+## ÍNDICE
 
 1. [Quem Somos](#1-quem-somos)
 2. [Filosofia](#2-filosofia)
-3. [Portfolio de Produtos](#3-portfolio-de-produtos)
+3. [Portfólio de Produtos](#3-portfolio-de-produtos)
 4. [Mercado e Clientes](#4-mercado-e-clientes)
 5. [Como Vendemos](#5-como-vendemos)
 6. [Modelo Financeiro](#6-modelo-financeiro)
 7. [Equipe](#7-equipe)
-8. [Aprendizados de Operacao](#8-aprendizados-de-operacao)
-9. [Diferenciais e Concorrencia](#9-diferenciais-e-concorrencia)
-10. [Visao e Norte Estrategico](#10-visao-e-norte-estrategico)
-11. [Compliance e Segregacao](#11-compliance-e-segregacao)
+8. [Aprendizados de Operação](#8-aprendizados-de-operacao)
+9. [Diferenciais e Concorrência](#9-diferenciais-e-concorrencia)
+10. [Visão e Norte Estratégico](#10-visao-e-norte-estrategico)
+11. [Compliance e Segregação](#11-compliance-e-segregacao)
 12. [Identidade Visual](#12-identidade-visual)
-13. [Glossario](#13-glossario)
+13. [Glossário](#13-glossario)
 
 ---
 
@@ -29,31 +29,31 @@
 
 ### A Empresa
 
-**THAUMA — Inteligencia & Narrativa em Saude** e uma consultoria que promove ganho de eficiencia, escala, qualidade e profissionalismo para gestores de saude publica e prestadores de servico no ambito do SUS, por meio da utilizacao de tecnologia, inteligencia artificial e dados publicos de saude.
+**THAUMA — Inteligência & Narrativa em Saúde** é uma consultoria que promove ganho de eficiência, escala, qualidade e profissionalismo para gestores de saúde pública e prestadores de serviço no âmbito do SUS, por meio da utilização de tecnologia, inteligência artificial e dados públicos de saúde.
 
-Nos organizamos dados e construimos narrativas, ferramentas e processos para players da area da saude, com suporte em IA e nas bases de dados do Sistema Unico de Saude.
+Nós organizamos dados e construímos narrativas, ferramentas e processos para players da área da saúde, com suporte em IA e nas bases de dados do Sistema Único de Saúde.
 
-**Fundacao:** Dezembro de 2025
-**CNPJ:** Constituido e regularizado
+**Fundação:** Dezembro de 2025
+**CNPJ:** Constituído e regularizado
 **Sede operacional:** Belo Horizonte, MG
 
 ### O Nome
 
-**THAUMA** vem do grego *Thaumazein* (thaumazein) — o espanto, a admiracao, o ato de maravilhar-se. Para Platao e Aristoteles, e a origem de todo conhecimento filosofico. O nome esta tatuado no braco do fundador como compromisso existencial com a verdade nos dados.
+**THAUMA** vem do grego *Thaumazein* (thaumazein) — o espanto, a admiração, o ato de maravilhar-se. Para Platão e Aristóteles, é a origem de todo conhecimento filosófico. O nome está tatuado no braço do fundador como compromisso existencial com a verdade nos dados.
 
-**Tagline:** *"O espanto da descoberta. A ciencia do resultado."*
+**Tagline:** *"O espanto da descoberta. A ciência do resultado."*
 
 ### Os Fundadores
 
-| Socio | Papel | Forca Principal |
+| Sócio | Papel | Força Principal |
 |-------|-------|-----------------|
-| **Pedro William Ribeiro Diniz** | Fundador. Cerebro estrategico. | Dados, estrategia, metodologia |
-| **Vinicius de Paula Prudente Aquino** | Socio administrador formal. | Vendas e tecnologia |
-| **Bruno Volpini Guimaraes** | Socio. | Design de produto |
+| **Pedro William Ribeiro Diniz** | Fundador. Cérebro estratégico. | Dados, estratégia, metodologia |
+| **Vinícius de Paula Prudente Aquino** | Sócio administrador formal. | Vendas e tecnologia |
+| **Bruno Volpini Guimarães** | Sócio. | Design de produto |
 
-Pedro e Senior BI Analyst na FHEMIG (Fundacao Hospitalar do Estado de Minas Gerais) ha 5 anos, ex-Diretor no IPSEMG, e criador da metodologia "Kit de Captacao 4.0". Sua experiencia diaria com dados de saude publica e o que torna a THAUMA possivel.
+Pedro é Senior BI Analyst na FHEMIG (Fundação Hospitalar do Estado de Minas Gerais) há 5 anos, ex-Diretor no IPSEMG, e criador da metodologia "Kit de Captação 4.0". Sua experiência diária com dados de saúde pública é o que torna a THAUMA possível.
 
-Vinicius assume a administracao formal (Pedro, como servidor publico, nao pode ser administrador) e traz competencia em vendas e tecnologia. Bruno atua no design e estruturacao de produtos.
+Vinícius assume a administração formal (Pedro, como servidor público, não pode ser administrador) e traz competência em vendas e tecnologia. Bruno atua no design e estruturação de produtos.
 
 ---
 
@@ -61,113 +61,113 @@ Vinicius assume a administracao formal (Pedro, como servidor publico, nao pode s
 
 ### O Conceito Central: Doxa vs Episteme
 
-O setor de saude publica brasileiro opera majoritariamente na **Doxa** — opiniao subjetiva, gestao por intuicao, pedidos emocionais sem fundamento em dados.
+O setor de saúde pública brasileiro opera majoritariamente na **Doxa** — opinião subjetiva, gestão por intuição, pedidos emocionais sem fundamento em dados.
 
-A THAUMA conduz seus clientes a **Episteme** — conhecimento verdadeiro, gestao orientada por dados, argumentacao estruturada e verificavel.
+A THAUMA conduz seus clientes à **Episteme** — conhecimento verdadeiro, gestão orientada por dados, argumentação estruturada e verificável.
 
-**Na pratica:** o gestor que dizia "precisamos de ajuda porque atendemos muita gente" passa a dizer "atendemos 12.847 pacientes de 47 municipios, gerando R$ 47M em custo evitado ao SUS".
+**Na prática:** o gestor que dizia "precisamos de ajuda porque atendemos muita gente" passa a dizer "atendemos 12.847 pacientes de 47 municípios, gerando R$ 47M em custo evitado ao SUS".
 
-### O Thaumazein na Pratica
+### O Thaumazein na Prática
 
-Os termos gregos sao a linguagem interna da marca e do posicionamento de autoridade (LinkedIn, conteudo). Na conversa comercial, o que funciona e o **conceito traduzido**: trocar achismo por certeza, dar estrutura onde havia caos.
+Os termos gregos são a linguagem interna da marca e do posicionamento de autoridade (LinkedIn, conteúdo). Na conversa comercial, o que funciona é o **conceito traduzido**: trocar achismo por certeza, dar estrutura onde havia caos.
 
-O efeito thaumazein — o espanto — e real e observado na pratica. Quando a THAUMA revela dados que o proprio gestor desconhecia sobre sua instituicao, a reacao e consistente: "como voces sabem disso sobre o meu hospital?" Esse e o momento de conversao.
+O efeito thaumazein — o espanto — é real e observado na prática. Quando a THAUMA revela dados que o próprio gestor desconhecia sobre sua instituição, a reação é consistente: "como vocês sabem disso sobre o meu hospital?" Esse é o momento de conversão.
 
-**Duas camadas de comunicacao:**
-- **Camada publica** (LinkedIn, marca, conteudo): usa os termos gregos para posicionamento de autoridade
-- **Camada comercial** (call, reuniao, proposta): usa o conceito traduzido — dados que provocam espanto
+**Duas camadas de comunicação:**
+- **Camada pública** (LinkedIn, marca, conteúdo): usa os termos gregos para posicionamento de autoridade
+- **Camada comercial** (call, reunião, proposta): usa o conceito traduzido — dados que provocam espanto
 
-### Os 4 Dogmas (Valores Inegociaveis)
+### Os 4 Dogmas (Valores Inegociáveis)
 
 **1. ALETHEIA (Verdade)**
-Nunca maquiar dados. Todo numero e rastreavel a fonte oficial e verificavel por qualquer analista com acesso as mesmas bases.
+Nunca maquiar dados. Todo número é rastreável à fonte oficial e verificável por qualquer analista com acesso às mesmas bases.
 
-**2. LOGOS (Razao)**
-Onde ha emocao desordenada, lógica estruturada. Cada conclusao deriva de premissas verificaveis.
+**2. LOGOS (Razão)**
+Onde há emoção desordenada, lógica estruturada. Cada conclusão deriva de premissas verificáveis.
 
-**3. TECHNE (Tecnica)**
-IA e ciencia de dados como ferramentas de excelencia. A tecnologia nao substitui o pensamento — ela permite executa-lo em velocidade e escala impossiveis manualmente.
+**3. TECHNE (Técnica)**
+IA e ciência de dados como ferramentas de excelência. A tecnologia não substitui o pensamento — ela permite executá-lo em velocidade e escala impossíveis manualmente.
 
-**4. PRAXIS (Acao)**
-Conhecimento so serve se gerar resultado concreto. O foco final e o recurso captado, a decisao tomada, o argumento que convenceu — nao o relatorio bonito.
+**4. PRAXIS (Ação)**
+Conhecimento só serve se gerar resultado concreto. O foco final é o recurso captado, a decisão tomada, o argumento que convenceu — não o relatório bonito.
 
 ### O Manifesto: "O Fim da Caverna"
 
-Administrar um hospital filantropico no escuro nao e gestao; e sobrevivencia.
+Administrar um hospital filantrópico no escuro não é gestão; é sobrevivência.
 
-Muitos gestores operam vendo apenas as sombras na parede platonica: a falta de caixa, a fila de espera interminavel, a negativa politica sem explicacao. Eles pedem ajuda baseados na emocao, mas recebem silencio.
+Muitos gestores operam vendo apenas as sombras na parede platônica: a falta de caixa, a fila de espera interminável, a negativa política sem explicação. Eles pedem ajuda baseados na emoção, mas recebem silêncio.
 
-A THAUMA existe para provocar o espanto revelador. Dentro dos dados brutos — aqueles arquivos SIH/DATASUS esquecidos em pastas — existe uma historia poderosa esperando para ser contada. Uma historia de impacto real mensuravel, vidas salvas documentadas, relevancia eleitoral comprovada.
+A THAUMA existe para provocar o espanto revelador. Dentro dos dados brutos — aqueles arquivos SIH/DATASUS esquecidos em pastas — existe uma história poderosa esperando para ser contada. Uma história de impacto real mensurável, vidas salvas documentadas, relevância eleitoral comprovada.
 
-Nao inventamos narrativas. Nos revelamos a verdade que torna a instituicao indispensavel.
+Não inventamos narrativas. Nós revelamos a verdade que torna a instituição indispensável.
 
 ---
 
-## 3. PORTFOLIO DE PRODUTOS
+## 3. PORTFÓLIO DE PRODUTOS
 
-### Filosofia de Portfolio
+### Filosofia de Portfólio
 
-A THAUMA nao vende "pacotes". Vende inteligencia aplicada. Os produtos sao organizados em **verticais de servico** que refletem o que a empresa consegue entregar hoje, com clareza sobre o que esta em desenvolvimento.
+A THAUMA não vende "pacotes". Vende inteligência aplicada. Os produtos são organizados em **verticais de serviço** que refletem o que a empresa consegue entregar hoje, com clareza sobre o que está em desenvolvimento.
 
-### Vertical 1: Inteligencia Politica (Consolidada)
+### Vertical 1: Inteligência Política (Consolidada)
 
-Captacao de emendas parlamentares, trabalho para gabinetes, engenharia politica baseada em dados.
+Captação de emendas parlamentares, trabalho para gabinetes, engenharia política baseada em dados.
 
-#### Produto Flagship: O PRISMA DE CAPTACAO
+#### Produto Flagship: O PRISMA DE CAPTAÇÃO
 
-O Prisma recebe a luz branca (dados brutos/caos informacional) e a decompoe no espectro visivel (oportunidades claras e acionaveis).
+O Prisma recebe a luz branca (dados brutos/caos informacional) e a decompõe no espectro visível (oportunidades claras e acionáveis).
 
-| # | Componente | Descricao |
+| # | Componente | Descrição |
 |:-:|:-----------|:----------|
-| 1 | **Dossie de Evidencias** | Analise epidemiologica + impacto regional + ROI politico (40-60 paginas) |
-| 2 | **Radar Politico** | Dashboard DATASUS x TSE + Top 10 Parlamentares via Score SAT |
-| 3 | **Dialetica de Convencimento** | Pitch deck personalizado por parlamentar-alvo (15-20 slides) |
-| 4 | **Retorica da Influencia** | Playbook com roteiros, objecoes, cronograma de captacao (20-30 paginas) |
+| 1 | **Dossiê de Evidências** | Análise epidemiológica + impacto regional + ROI político (40-60 páginas) |
+| 2 | **Radar Político** | Dashboard DATASUS x TSE + Top 10 Parlamentares via Score SAT |
+| 3 | **Dialética de Convencimento** | Pitch deck personalizado por parlamentar-alvo (15-20 slides) |
+| 4 | **Retórica da Influência** | Playbook com roteiros, objeções, cronograma de captação (20-30 páginas) |
 
 **Investimento:** R$ 24.000 – R$ 26.000
-**Prazo:** 20-30 dias uteis
-**Pagamento:** 50% no inicio + 50% na entrega
+**Prazo:** 20-30 dias úteis
+**Pagamento:** 50% no início + 50% na entrega
 
 #### Score SAT (Score de Alinhamento Territorial)
 
-Formula proprietaria que quantifica o alinhamento politico-eleitoral:
+Fórmula proprietária que quantifica o alinhamento político-eleitoral:
 
 ```
-SAT = (Votos do Parlamentar no Municipio / 1.000) x (Pacientes do Municipio / 100)
+SAT = (Votos do Parlamentar no Município / 1.000) x (Pacientes do Município / 100)
 ```
 
-Cruza base eleitoral do parlamentar (TSE) com volume de pacientes atendidos pelo hospital (DATASUS). Quanto maior o SAT, maior a motivacao politica do parlamentar em apoiar aquele hospital.
+Cruza base eleitoral do parlamentar (TSE) com volume de pacientes atendidos pelo hospital (DATASUS). Quanto maior o SAT, maior a motivação política do parlamentar em apoiar aquele hospital.
 
 #### Mini-Prisma
 
-Diagnostico gratuito de 3 paginas com 3 insights — funciona como lead magnet e prova de capacidade. O gestor recebe um aperitivo do que o Prisma completo entrega.
+Diagnóstico gratuito de 3 páginas com 3 insights — funciona como lead magnet e prova de capacidade. O gestor recebe um aperitivo do que o Prisma completo entrega.
 
-### Vertical 2: Inteligencia Assistencial (Consolidada)
+### Vertical 2: Inteligência Assistencial (Consolidada)
 
-Business Intelligence as a Service para hospitais e gestores de saude. Fornece a estrutura de analise de dados que eles nao tem internamente.
+Business Intelligence as a Service para hospitais e gestores de saúde. Fornece a estrutura de análise de dados que eles não têm internamente.
 
 | Entrega | Investimento |
 |---------|-------------|
-| **Setup de dashboard completo** (paineis, indicadores, fontes configuradas) | R$ 4.000 – R$ 5.000 |
-| **Nutricao mensal** (atualizacao, novas analises, suporte) | R$ 1.500/mes |
+| **Setup de dashboard completo** (painéis, indicadores, fontes configuradas) | R$ 4.000 – R$ 5.000 |
+| **Nutrição mensal** (atualização, novas análises, suporte) | R$ 1.500/mês |
 
-**Logica estrategica:** O Prisma e a porta de entrada premium (projeto unico, alto impacto). A inteligencia assistencial e a **recorrencia** — o cliente que comprou o Prisma e candidato natural ao BI mensal. O Prisma paga o custo de aquisicao; a recorrencia constroi a receita previsivel.
+**Lógica estratégica:** O Prisma é a porta de entrada premium (projeto único, alto impacto). A inteligência assistencial é a **recorrência** — o cliente que comprou o Prisma é candidato natural ao BI mensal. O Prisma paga o custo de aquisição; a recorrência constrói a receita previsível.
 
-### Vertical 3: Inteligencia Artificial (Roadmap)
+### Vertical 3: Inteligência Artificial (Roadmap)
 
-Agentes autonomos para terceirizacao de back-office hospitalar. A equipe multiagente da propria THAUMA e prova de conceito da capacidade.
+Agentes autônomos para terceirização de back-office hospitalar. A equipe multiagente da própria THAUMA é prova de conceito da capacidade.
 
-**Status:** Em ideacao. Sem pipeline de produto definido.
+**Status:** Em ideação. Sem pipeline de produto definido.
 
 ### Vertical 4: Marketing Hospitalar (Roadmap)
 
-Substituir agencias tradicionais para hospitais e gestores publicos. Conteudo, posicionamento, presenca digital — com a vantagem de entender o setor por dentro.
+Substituir agências tradicionais para hospitais e gestores públicos. Conteúdo, posicionamento, presença digital — com a vantagem de entender o setor por dentro.
 
-**Status:** Em ideacao. Sem pipeline de produto definido.
+**Status:** Em ideação. Sem pipeline de produto definido.
 
 ### Diferencial Transversal: Velocidade
 
-O que levaria semanas com ferramentas tradicionais (TabWin, Excel, equipes de faturamento), a THAUMA entrega em dias ou horas com IA e automacao. Essa velocidade e vantagem competitiva real e permeia todos os produtos.
+O que levaria semanas com ferramentas tradicionais (TabWin, Excel, equipes de faturamento), a THAUMA entrega em dias ou horas com IA e automação. Essa velocidade é vantagem competitiva real e permeia todos os produtos.
 
 ---
 
@@ -176,31 +176,31 @@ O que levaria semanas com ferramentas tradicionais (TabWin, Excel, equipes de fa
 ### Clientes-Alvo (3 Camadas)
 
 **Camada 1 — Core (validada):**
-- Hospitais filantropicos certificados (CEBAS)
-- Santas Casas de Misericordia
-- Porte medio a grande (50+ leitos)
-- Localizacao: interior de estados (alta dependencia regional)
+- Hospitais filantrópicos certificados (CEBAS)
+- Santas Casas de Misericórdia
+- Porte médio a grande (50+ leitos)
+- Localização: interior de estados (alta dependência regional)
 
-**Camada 2 — Agentes publicos:**
-- Parlamentares (deputados estaduais/federais) que querem alocar emendas com inteligencia
-- Secretarios municipais de saude que precisam de dados para gestao
+**Camada 2 — Agentes públicos:**
+- Parlamentares (deputados estaduais/federais) que querem alocar emendas com inteligência
+- Secretários municipais de saúde que precisam de dados para gestão
 
-**Camada 3 — Prestadores de servico ao SUS:**
-- Empresas de locacao de mao de obra medica
+**Camada 3 — Prestadores de serviço ao SUS:**
+- Empresas de locação de mão de obra médica
 - Gestoras de UTIs terceirizadas
-- Fornecedores de materiais e servicos hospitalares
+- Fornecedores de materiais e serviços hospitalares
 
 ### Perfil do Decisor
 
-- Diretor/Gestor com formacao tecnica (medico, administrador, contador)
-- Frustrado com tentativas anteriores de captacao amadora
-- Reconhece o valor da decisao baseada em dados
-- **Dificil de acessar** — bombardeado por fornecedores, desconfiado de desconhecidos
+- Diretor/Gestor com formação técnica (médico, administrador, contador)
+- Frustrado com tentativas anteriores de captação amadora
+- Reconhece o valor da decisão baseada em dados
+- **Difícil de acessar** — bombardeado por fornecedores, desconfiado de desconhecidos
 
 ### Geografia
 
-- **Fase atual:** Minas Gerais (consolidacao)
-- **Proxima fase:** Sao Paulo interior (80+ hospitais)
+- **Fase atual:** Minas Gerais (consolidação)
+- **Próxima fase:** São Paulo interior (80+ hospitais)
 - **Futuro:** PR + SC + RS (90+ hospitais)
 
 ---
@@ -209,30 +209,30 @@ O que levaria semanas com ferramentas tradicionais (TabWin, Excel, equipes de fa
 
 ### A Verdade Sobre Vendas
 
-A principal descoberta dos primeiros 4 meses de operacao: **o acesso ao decisor e o maior gargalo do negocio**. O produto e forte, o preco e justo, a qualidade impressiona. Mas chegar na pessoa certa e extremamente dificil. Gestores ignoram, somem, nao atendem.
+A principal descoberta dos primeiros 4 meses de operação: **o acesso ao decisor é o maior gargalo do negócio**. O produto é forte, o preço é justo, a qualidade impressiona. Mas chegar na pessoa certa é extremamente difícil. Gestores ignoram, somem, não atendem.
 
 ### Canais (em ordem de efetividade)
 
-**1. Rede e indicacao (canal primario)**
-O unico contrato fechado (Santa Casa de Ouro Preto, R$ 18.997) veio por indicacao de um contato da rede pessoal do Pedro. Conexoes quentes convertem. Cold nao.
+**1. Rede e indicação (canal primário)**
+O único contrato fechado (Santa Casa de Ouro Preto, R$ 18.997) veio por indicação de um contato da rede pessoal do Pedro. Conexões quentes convertem. Cold não.
 
 Conectores ativos e potenciais:
-- **Fabricio** — ja ativo, trouxe leads qualificados (Hospital Sao Joao de Deus de Vinopolis)
-- **Dr. Rodrigo Kleinpaul** — ex-colega, conectando Manhuacu
-- **Dr. Bernardo Ramos** — ex-politico da saude, rede ampla
-- **Claudia Herminia** — ex-diretora de hospital grande em BH, atua em conselhos
+- **Fabrício** — já ativo, trouxe leads qualificados (Hospital São João de Deus de Vinópolis)
+- **Dr. Rodrigo Kleinpaul** — ex-colega, conectando Manhuaçu
+- **Dr. Bernardo Ramos** — ex-político da saúde, rede ampla
+- **Cláudia Hermínia** — ex-diretora de hospital grande em BH, atua em conselhos
 
 **2. Inbound (suporte de credibilidade)**
-Producao de conteudo no LinkedIn para construcao de autoridade. Gera credibilidade e posicionamento, mas conversao direta em cliente e baixa. Funciona como validacao quando a indicacao chega — o prospect pesquisa Pedro no LinkedIn e encontra conteudo de qualidade.
+Produção de conteúdo no LinkedIn para construção de autoridade. Gera credibilidade e posicionamento, mas conversão direta em cliente é baixa. Funciona como validação quando a indicação chega — o prospect pesquisa Pedro no LinkedIn e encontra conteúdo de qualidade.
 
 **3. Outbound frio (complementar)**
-Cold call, cold email. Deficiente na pratica. Conversao muito baixa. Complementar, nunca motor.
+Cold call, cold email. Deficiente na prática. Conversão muito baixa. Complementar, nunca motor.
 
-### Principio Operacional
+### Princípio Operacional
 
-**Confianca vende, dado convence, cold nao funciona sozinho.**
+**Confiança vende, dado convence, cold não funciona sozinho.**
 
-O modelo que funciona: um conector abre a porta → Pedro senta com o decisor → mostra dados que o gestor desconhecia sobre o proprio hospital → o thaumazein acontece → proposta.
+O modelo que funciona: um conector abre a porta → Pedro senta com o decisor → mostra dados que o gestor desconhecia sobre o próprio hospital → o thaumazein acontece → proposta.
 
 ---
 
@@ -242,12 +242,12 @@ O modelo que funciona: um conector abre a porta → Pedro senta com o decisor �
 
 | Fonte | Tipo | Valor | Status |
 |-------|------|-------|--------|
-| Prisma de Captacao | Projeto | R$ 24.000 – R$ 26.000 | Validado (1 contrato) |
+| Prisma de Captação | Projeto | R$ 24.000 – R$ 26.000 | Validado (1 contrato) |
 | Mini-Prisma | Lead magnet | Gratuito | Ativo |
-| BI as a Service — Setup | Projeto | R$ 4.000 – R$ 5.000 | Em estruturacao |
-| BI as a Service — Nutricao | Recorrente | R$ 1.500/mes | Em estruturacao |
+| BI as a Service — Setup | Projeto | R$ 4.000 – R$ 5.000 | Em estruturação |
+| BI as a Service — Nutrição | Recorrente | R$ 1.500/mês | Em estruturação |
 
-### Historico
+### Histórico
 
 | Marco | Valor | Data |
 |-------|-------|------|
@@ -255,234 +255,234 @@ O modelo que funciona: um conector abre a porta → Pedro senta com o decisor �
 
 ### Norte Financeiro
 
-**Meta para dezembro de 2026:** R$ 25.000/mes de renda pessoal recorrente para o fundador.
+**Meta para dezembro de 2026:** R$ 25.000/mês de renda pessoal recorrente para o fundador.
 
-Este numero nao e arbitrario — e o ponto de **liberdade**: a renda que permite a Pedro tirar licenca do servico publico e dedicar 100% a THAUMA. Quando isso acontecer, a segregacao FHEMIG/THAUMA deixa de existir e a empresa entra em outro patamar de dedicacao e crescimento.
+Este número não é arbitrário — é o ponto de **liberdade**: a renda que permite a Pedro tirar licença do serviço público e dedicar 100% à THAUMA. Quando isso acontecer, a segregação FHEMIG/THAUMA deixa de existir e a empresa entra em outro patamar de dedicação e crescimento.
 
-**Caminho para R$ 25K/mes:**
-- 1 Prisma a cada 2 meses (~R$ 12.500/mes medio)
-- 8-10 clientes recorrentes de BI a R$ 1.500/mes (~R$ 12.000-15.000/mes)
-- Total: ~R$ 25.000/mes com base diversificada entre projetos e recorrencia
+**Caminho para R$ 25K/mês:**
+- 1 Prisma a cada 2 meses (~R$ 12.500/mês médio)
+- 8-10 clientes recorrentes de BI a R$ 1.500/mês (~R$ 12.000-15.000/mês)
+- Total: ~R$ 25.000/mês com base diversificada entre projetos e recorrência
 
 ### Custos Operacionais (estimativa mensal)
 
 | Item | Custo |
 |------|-------|
-| Claude Code (API) | Variavel |
+| Claude Code (API) | Variável |
 | Google BigQuery | ~US$ 1-5 |
 | Notion Pro | ~R$ 50 |
 | Ferramentas diversas | ~R$ 150-300 |
-| **Total fixo estimado** | **~R$ 200-500/mes** |
+| **Total fixo estimado** | **~R$ 200-500/mês** |
 
-A estrutura e extremamente leve. A equipe de IA substitui custos de pessoal que seriam de R$ 30-50K/mes em uma consultoria tradicional.
+A estrutura é extremamente leve. A equipe de IA substitui custos de pessoal que seriam de R$ 30-50K/mês em uma consultoria tradicional.
 
 ---
 
 ## 7. EQUIPE
 
-### Socios (Humanos)
+### Sócios (Humanos)
 
-| Socio | Dedicacao Semanal | Papel |
+| Sócio | Dedicação Semanal | Papel |
 |-------|-------------------|-------|
-| **Pedro** | 8-10 horas | Estrategia, dados, metodologia, reunioes com clientes |
+| **Pedro** | 8-10 horas | Estratégia, dados, metodologia, reuniões com clientes |
 | **Bruno Volpini** | 4-5 horas | Design de produto |
-| **Vinicius Aquino** | Minima (por acordo) | Administracao formal, vendas quando ativado |
+| **Vinícius Aquino** | Mínima (por acordo) | Administração formal, vendas quando ativado |
 
-**Total humano:** ~15 horas/semana. A THAUMA opera em meio-periodo coletivo. E exatamente por isso que a equipe de IA existe.
+**Total humano:** ~15 horas/semana. A THAUMA opera em meio-período coletivo. É exatamente por isso que a equipe de IA existe.
 
 ### Equipe de IA (25 Agentes em 6 Departamentos)
 
-A THAUMA opera com uma equipe multiagente de inteligencia artificial via Claude Code. Cada agente tem identidade, responsabilidades e protocolos definidos. Orchestrators rodam em modelo Opus (pensamento estrategico); sub-agentes em Sonnet (execucao).
+A THAUMA opera com uma equipe multiagente de inteligência artificial via Claude Code. Cada agente tem identidade, responsabilidades e protocolos definidos. Orchestrators rodam em modelo Opus (pensamento estratégico); sub-agentes em Sonnet (execução).
 
-| Departamento | Gerente (Opus) | Sub-agentes (Sonnet) | Funcao |
+| Departamento | Gerente (Opus) | Sub-agentes (Sonnet) | Função |
 |-------------|----------------|---------------------|--------|
-| **Marketing** | Pericles | Euclides, Aristoteles, Caliope, Dedalo, Hermes, Agora | Inbound, outbound, conteudo, prospeccao |
-| **Dados** | Pitagoras | Heraclito, Hipaso, Anaxagoras, Ptolomeu | Data Lake, ETL, analytics, Score SAT |
-| **Juridico** | Solon | Temis, Licurgo | Contratos, compliance, LGPD |
-| **Financeiro** | Tales | Creso, Xenofonte | Faturamento, pricing, projecoes |
-| **Projetos** | Arquimedes | Teseu, Icaro | Entrega de Prisma, novos produtos |
-| **Operacoes** | Hefesto | Atlas, Cronos | Integracoes, automacoes, KPIs |
+| **Marketing** | Péricles | Euclides, Aristóteles, Calíope, Dédalo, Hermes, Ágora | Inbound, outbound, conteúdo, prospecção |
+| **Dados** | Pitágoras | Heráclito, Hipaso, Anaxágoras, Ptolomeu | Data Lake, ETL, analytics, Score SAT |
+| **Jurídico** | Sólon | Têmis, Licurgo | Contratos, compliance, LGPD |
+| **Financeiro** | Tales | Creso, Xenofonte | Faturamento, pricing, projeções |
+| **Projetos** | Arquimedes | Teseu, Ícaro | Entrega de Prisma, novos produtos |
+| **Operações** | Hefesto | Atlas, Cronos | Integrações, automações, KPIs |
 
-Acima de todos, **Socrates** (CEO) coordena os 6 departamentos e mantem continuidade entre sessoes.
+Acima de todos, **Sócrates** (CEO) coordena os 6 departamentos e mantém continuidade entre sessões.
 
-**Nivel de confianca na IA:** Alto. Pedro confia na autonomia da equipe de IA para extracao de dados e producao de textos. O gargalo nao e confianca — e a falta de templates e processos completamente estruturados. A reorganizacao de abril 2026 resolveu a arquitetura; a operacionalizacao e o proximo passo.
+**Nível de confiança na IA:** Alto. Pedro confia na autonomia da equipe de IA para extração de dados e produção de textos. O gargalo não é confiança — é a falta de templates e processos completamente estruturados. A reorganização de abril 2026 resolveu a arquitetura; a operacionalização é o próximo passo.
 
-**Repositorio:** [github.com/thauma-consultoria/thauma-staff](https://github.com/thauma-consultoria/thauma-staff) (publico)
+**Repositório:** [github.com/thauma-consultoria/thauma-staff](https://github.com/thauma-consultoria/thauma-staff) (público)
 
 ### O Multiplicador
 
-15 horas humanas semanais + equipe de IA = capacidade equivalente a uma consultoria de 5-8 pessoas em tempo integral. A IA faz o que so humanos faziam: extrai dados, redige relatorios, cria sequencias de email, monta dashboards, pesquisa prospects. Os humanos fazem o que so humanos fazem: relacionamento, decisao, presenca, negociacao.
+15 horas humanas semanais + equipe de IA = capacidade equivalente a uma consultoria de 5-8 pessoas em tempo integral. A IA faz o que só humanos faziam: extrai dados, redige relatórios, cria sequências de email, monta dashboards, pesquisa prospects. Os humanos fazem o que só humanos fazem: relacionamento, decisão, presença, negociação.
 
 ---
 
-## 8. APRENDIZADOS DE OPERACAO
+## 8. APRENDIZADOS DE OPERAÇÃO
 
-Quatro meses de operacao (dezembro 2025 — abril 2026) geraram tres aprendizados fundamentais:
+Quatro meses de operação (dezembro 2025 — abril 2026) geraram três aprendizados fundamentais:
 
-### 1. O Acesso ao Decisor e o Maior Gargalo
+### 1. O Acesso ao Decisor é o Maior Gargalo
 
-Nao e o produto, nao e o preco, nao e a qualidade. E **chegar na pessoa certa**. Gestores de hospital sao bombardeados, desconfiados, ocupados. Eles ignoram, somem. A qualidade do produto so importa depois que voce consegue 15 minutos da atencao do decisor.
+Não é o produto, não é o preço, não é a qualidade. É **chegar na pessoa certa**. Gestores de hospital são bombardeados, desconfiados, ocupados. Eles ignoram, somem. A qualidade do produto só importa depois que você consegue 15 minutos da atenção do decisor.
 
-**Implicacao:** Investir em rede de conectores e indicacao e mais eficiente do que escalar volume de cold outreach.
+**Implicação:** Investir em rede de conectores e indicação é mais eficiente do que escalar volume de cold outreach.
 
 ### 2. O Produto Tem Valor Percebido Alto
 
-Quando o Prisma chega na mesa certa, o efeito e consistente: espanto. O gestor nao sabia que aqueles dados existiam sobre o proprio hospital. O preco de R$ 24-26K nao e objecao quando o retorno potencial e uma emenda de R$ 200K-2M.
+Quando o Prisma chega na mesa certa, o efeito é consistente: espanto. O gestor não sabia que aqueles dados existiam sobre o próprio hospital. O preço de R$ 24-26K não é objeção quando o retorno potencial é uma emenda de R$ 200K-2M.
 
-**Implicacao:** O problema nao e justificar o preco. E criar a oportunidade de mostrar.
+**Implicação:** O problema não é justificar o preço. É criar a oportunidade de mostrar.
 
-### 3. Automacao e o Multiplicador Real
+### 3. Automação é o Multiplicador Real
 
-A IA e os pipelines de dados permitem entregar em horas o que levaria semanas com ferramentas tradicionais. Isso nao e discurso — e vantagem competitiva mensuravel. O que um analista faria em 3 semanas com TabWin, a equipe de IA faz em 2 dias.
+A IA e os pipelines de dados permitem entregar em horas o que levaria semanas com ferramentas tradicionais. Isso não é discurso — é vantagem competitiva mensurável. O que um analista faria em 3 semanas com TabWin, a equipe de IA faz em 2 dias.
 
-**Implicacao:** Investir continuamente na automacao dos processos de extracao, tratamento e visualizacao de dados.
+**Implicação:** Investir continuamente na automação dos processos de extração, tratamento e visualização de dados.
 
 ---
 
-## 9. DIFERENCIAIS E CONCORRENCIA
+## 9. DIFERENCIAIS E CONCORRÊNCIA
 
 ### Contra Quem Competimos
 
 **1. A equipe interna do hospital**
-O faturamento do hospital "ja faz isso". Na verdade, nao faz — mas o gestor acha que faz. Esse e o concorrente mais perigoso: nao e uma empresa, e a inercia. A objecao "ja temos gente que cuida disso" mata antes do pitch.
+O faturamento do hospital "já faz isso". Na verdade, não faz — mas o gestor acha que faz. Esse é o concorrente mais perigoso: não é uma empresa, é a inércia. A objeção "já temos gente que cuida disso" mata antes do pitch.
 
-**2. Consultorias tradicionais de captacao de emendas**
-Existem, mas operam na Doxa: relacoes pessoais, carta generica, lobby. Nao cruzam DATASUS com TSE, nao calculam SAT, nao entregam dossie com dados. Vendem acesso politico, nao inteligencia.
+**2. Consultorias tradicionais de captação de emendas**
+Existem, mas operam na Doxa: relações pessoais, carta genérica, lobby. Não cruzam DATASUS com TSE, não calculam SAT, não entregam dossiê com dados. Vendem acesso político, não inteligência.
 
 **3. Empresas de BI generalistas**
-Fazem analytics, mas nao sao especializadas em saude publica. Nao conhecem SIH, SIA, CNES, SIGTAP. Nao falam a lingua do gestor de hospital. Nao sabem o que e vazio assistencial ou custo evitado ao SUS.
+Fazem analytics, mas não são especializadas em saúde pública. Não conhecem SIH, SIA, CNES, SIGTAP. Não falam a língua do gestor de hospital. Não sabem o que é vazio assistencial ou custo evitado ao SUS.
 
-### O Que Nos Torna Unicos
+### O Que Nos Torna Únicos
 
-A THAUMA ocupa uma **intersecao que ninguem mais ocupa**:
+A THAUMA ocupa uma **interseção que ninguém mais ocupa**:
 
-- **Conhece os dados de saude publica por dentro** — Pedro trabalha com isso ha 5 anos
-- **Cruza saude com politica** — DATASUS x TSE. Ninguem faz isso de forma sistematica
-- **Automatiza com IA** — velocidade que consultoria tradicional nao tem
-- **Entrega narrativa, nao so numero** — o dado vira argumento, nao relatorio
+- **Conhece os dados de saúde pública por dentro** — Pedro trabalha com isso há 5 anos
+- **Cruza saúde com política** — DATASUS x TSE. Ninguém faz isso de forma sistemática
+- **Automatiza com IA** — velocidade que consultoria tradicional não tem
+- **Entrega narrativa, não só número** — o dado vira argumento, não relatório
 
-A THAUMA nao compete por preco. Compete por uma categoria que inventou.
+A THAUMA não compete por preço. Compete por uma categoria que inventou.
 
 ---
 
-## 10. VISAO E NORTE ESTRATEGICO
+## 10. VISÃO E NORTE ESTRATÉGICO
 
 ### Meta de Curto Prazo (Dezembro 2026)
 
-R$ 25.000/mes de renda pessoal recorrente para o fundador = licenca do servico publico = dedicacao integral a THAUMA.
+R$ 25.000/mês de renda pessoal recorrente para o fundador = licença do serviço público = dedicação integral à THAUMA.
 
-### Marcos Estrategicos
+### Marcos Estratégicos
 
 | Horizonte | Marco |
 |-----------|-------|
-| **2026 (H2)** | Consolidar MG. 3-5 clientes entre Prisma e BI. Atingir R$ 25K/mes. |
-| **2027** | Licenca do Estado. Dedicacao integral. Expansao para SP interior. |
-| **2028-2029** | Expansao Sul (PR, SC, RS). Desenvolvimento das verticais 3 e 4. |
-| **2030** | Plataforma de inteligencia em saude com presenca nacional. |
+| **2026 (H2)** | Consolidar MG. 3-5 clientes entre Prisma e BI. Atingir R$ 25K/mês. |
+| **2027** | Licença do Estado. Dedicação integral. Expansão para SP interior. |
+| **2028-2029** | Expansão Sul (PR, SC, RS). Desenvolvimento das verticais 3 e 4. |
+| **2030** | Plataforma de inteligência em saúde com presença nacional. |
 
-### Principio de Crescimento
+### Princípio de Crescimento
 
-Crescer com os pes no chao. Nao projetar produtos que nao existem como se fossem reais. Consolidar o que funciona (Prisma + BI), estruturar o que falta (rede de conectores, processos, templates), e so expandir quando a base estiver solida.
+Crescer com os pés no chão. Não projetar produtos que não existem como se fossem reais. Consolidar o que funciona (Prisma + BI), estruturar o que falta (rede de conectores, processos, templates), e só expandir quando a base estiver sólida.
 
 ---
 
-## 11. COMPLIANCE E SEGREGACAO
+## 11. COMPLIANCE E SEGREGAÇÃO
 
 ### FHEMIG x THAUMA
 
-Pedro e servidor publico na FHEMIG e fundador da THAUMA simultaneamente. A segregacao entre as duas atividades e **absoluta, madura e auditavel**.
+Pedro é servidor público na FHEMIG e fundador da THAUMA simultaneamente. A segregação entre as duas atividades é **absoluta, madura e auditável**.
 
-| Dimensao | FHEMIG | THAUMA |
+| Dimensão | FHEMIG | THAUMA |
 |----------|--------|--------|
 | **Software** | TabWin, sistemas internos | R, Python, Claude Code |
-| **Dados** | Bases internas das unidades | Bases publicas DATASUS via CNPJ externo |
-| **Equipamento** | Maquinas e rede FHEMIG | Equipamentos pessoais |
-| **Horario** | Expediente funcional | Fora do expediente |
-| **Prospects** | NUNCA hospitais da rede FHEMIG | Hospitais externos a FHEMIG |
+| **Dados** | Bases internas das unidades | Bases públicas DATASUS via CNPJ externo |
+| **Equipamento** | Máquinas e rede FHEMIG | Equipamentos pessoais |
+| **Horário** | Expediente funcional | Fora do expediente |
+| **Prospects** | NUNCA hospitais da rede FHEMIG | Hospitais externos à FHEMIG |
 | **Contatos** | Rede institucional | Rede pessoal |
 
-**Historico:** Em 4 meses de operacao, nao houve nenhuma situacao de desconforto. O fundador ja recusou oportunidades (como agendas com deputados de MG via FHEMIG) para preservar a fronteira.
+**Histórico:** Em 4 meses de operação, não houve nenhuma situação de desconforto. O fundador já recusou oportunidades (como agendas com deputados de MG via FHEMIG) para preservar a fronteira.
 
-**Resolucao definitiva:** Quando Pedro tirar licenca do servico publico, a segregacao deixa de existir porque a fronteira desaparece. A THAUMA passa a ser a unica atividade.
+**Resolução definitiva:** Quando Pedro tirar licença do serviço público, a segregação deixa de existir porque a fronteira desaparece. A THAUMA passa a ser a única atividade.
 
-### LGPD e Dados Publicos
+### LGPD e Dados Públicos
 
-- Dados DATASUS sao publicos e agregados por municipio — nunca individualizados por paciente
-- Dados eleitorais TSE sao publicos — uso permitido
-- Dados de contato de prospects — base legal: legitimo interesse (art. 7, IX LGPD)
-- Dados de clientes — base legal: execucao de contrato (art. 7, V LGPD)
+- Dados DATASUS são públicos e agregados por município — nunca individualizados por paciente
+- Dados eleitorais TSE são públicos — uso permitido
+- Dados de contato de prospects — base legal: legítimo interesse (art. 7, IX LGPD)
+- Dados de clientes — base legal: execução de contrato (art. 7, V LGPD)
 
 ---
 
 ## 12. IDENTIDADE VISUAL
 
-### Conceito Estetico: "O Classico Futurista"
+### Conceito Estético: "O Clássico Futurista"
 
-O encontro entre a sabedoria classica (rigor, hierarquia, precisao) e a sofisticacao tecnologica (dados como protagonistas, IA como ferramenta).
+O encontro entre a sabedoria clássica (rigor, hierarquia, precisão) e a sofisticação tecnológica (dados como protagonistas, IA como ferramenta).
 
-### Paleta Cromatica
+### Paleta Cromática
 
-| Cor | Hex | Uso | Proporcao |
+| Cor | Hex | Uso | Proporção |
 |-----|-----|-----|-----------|
 | **Azul Profundo** | `#001070` | Base estrutural — fundos, headers, barras | 60-70% |
-| **Branco Absoluto** | `#FFFFFF` | Espaco de clareza — texto, fundos limpos | 20-30% |
-| **Ciano Tecnologico** | `#40D7FF` | Destaques reveladores — numeros-chave, CTAs | 5-10% |
+| **Branco Absoluto** | `#FFFFFF` | Espaço de clareza — texto, fundos limpos | 20-30% |
+| **Ciano Tecnológico** | `#40D7FF` | Destaques reveladores — números-chave, CTAs | 5-10% |
 
-Qualquer material fora desta paleta e automaticamente reprovado.
+Qualquer material fora desta paleta é automaticamente reprovado.
 
 ### Tipografia
 
 | Elemento | Fonte | Peso |
 |----------|-------|------|
-| Titulos | Helvetica | Bold / Medium |
+| Títulos | Helvetica | Bold / Medium |
 | Corpo de texto | Hahmlet | Regular |
-| Dados e numeros em destaque | Hahmlet | Bold |
+| Dados e números em destaque | Hahmlet | Bold |
 | Legendas e notas | Helvetica | Light |
 
 ### Tom de Voz
 
-- **Culto, mas acessivel** — explica sem pedantismo
-- **Seguro, mas nao arrogante** — confianca em evidencias, nao em ego
-- **Direto, mas nao frio** — humanidade dentro da tecnica
-- **Provocativo, mas nao agressivo** — dados que incomodam construtivamente
+- **Culto, mas acessível** — explica sem pedantismo
+- **Seguro, mas não arrogante** — confiança em evidências, não em ego
+- **Direto, mas não frio** — humanidade dentro da técnica
+- **Provocativo, mas não agressivo** — dados que incomodam construtivamente
 
 ### Palavras Proibidas
 
 | Proibida | Usar |
 |----------|------|
-| Dica | Estrategia |
-| Truque | Metodo |
+| Dica | Estratégia |
+| Truque | Método |
 | Custo | Investimento |
 | Ajuda | Parceria |
 
 ---
 
-## 13. GLOSSARIO
+## 13. GLOSSÁRIO
 
 | Termo | Significado |
 |-------|-------------|
-| **Thaumazein** | O espanto filosofico — origem do nome THAUMA |
-| **Doxa** | Opiniao subjetiva, abordagem amadora |
-| **Episteme** | Conhecimento verdadeiro, abordagem cientifica |
-| **Aletheia** | Verdade desvelada — base de toda analise |
-| **SAT** | Score de Alinhamento Territorial (formula proprietaria) |
-| **Prisma** | Produto principal — transforma dados brutos em estrategia politica |
-| **Mini-Prisma** | Diagnostico gratuito de 3 paginas — lead magnet |
-| **Vazio Assistencial** | Municipios sem cobertura de determinado procedimento/especialidade |
-| **CEBAS** | Certificacao de Entidade Beneficente de Assistencia Social |
-| **Kit de Captacao 4.0** | Nome historico da metodologia que originou o Prisma |
+| **Thaumazein** | O espanto filosófico — origem do nome THAUMA |
+| **Doxa** | Opinião subjetiva, abordagem amadora |
+| **Episteme** | Conhecimento verdadeiro, abordagem científica |
+| **Aletheia** | Verdade desvelada — base de toda análise |
+| **SAT** | Score de Alinhamento Territorial (fórmula proprietária) |
+| **Prisma** | Produto principal — transforma dados brutos em estratégia política |
+| **Mini-Prisma** | Diagnóstico gratuito de 3 páginas — lead magnet |
+| **Vazio Assistencial** | Municípios sem cobertura de determinado procedimento/especialidade |
+| **CEBAS** | Certificação de Entidade Beneficente de Assistência Social |
+| **Kit de Captação 4.0** | Nome histórico da metodologia que originou o Prisma |
 
 ---
 
-## REGISTRO DE CONSTRUCAO
+## REGISTRO DE CONSTRUÇÃO
 
-Este documento foi construido em 11 de abril de 2026 por meio de entrevista estruturada entre **Socrates** (CEO virtual da THAUMA) e **Pedro William Ribeiro Diniz** (fundador), cobrindo 10 blocos tematicos: origem, filosofia, portfolio, mercado, vendas, financeiro, aprendizados, equipe, visao e concorrencia.
+Este documento foi construído em 11 de abril de 2026 por meio de entrevista estruturada entre **Sócrates** (CEO virtual da THAUMA) e **Pedro William Ribeiro Diniz** (fundador), cobrindo 10 blocos temáticos: origem, filosofia, portfólio, mercado, vendas, financeiro, aprendizados, equipe, visão e concorrência.
 
-Substitui o Documento Fundacional v2.0 (dezembro 2024), que permanece como registro historico.
+Substitui o Documento Fundacional v2.0 (dezembro 2024), que permanece como registro histórico.
 
-**Proxima revisao recomendada:** Outubro 2026 (apos 6 meses de operacao com a nova estrutura)
+**Próxima revisão recomendada:** Outubro 2026 (após 6 meses de operação com a nova estrutura)
 
 ---
 
-**THAUMA Inteligencia & Narrativa em Saude**
-*"O espanto da descoberta. A ciencia do resultado."*
+**THAUMA Inteligência & Narrativa em Saúde**
+*"O espanto da descoberta. A ciência do resultado."*

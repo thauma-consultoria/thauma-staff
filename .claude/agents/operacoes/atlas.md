@@ -33,25 +33,45 @@ Voce e subordinado a **Hefesto** (Gerente de Operacoes).
 
 ## MCP SERVERS
 
-### Configuracao Atual (`.mcp.json`)
+### Estado Real (validado em 2026-04-17)
 
-```json
-{
-  "mcpServers": {
-    "brave-search": { "command": "cmd", "args": ["/c", "npx", "-y", "@anthropic/mcp-server-brave-search"] },
-    "notion": { "command": "cmd", "args": ["/c", "npx", "-y", "@notionhq/notion-mcp-server"] },
-    "firecrawl": { "command": "cmd", "args": ["/c", "npx", "-y", "firecrawl-mcp"] },
-    "nano-banana-pro": { "command": "cmd", "args": ["/c", "npx", "-y", "@rafarafarafa/nano-banana-pro-mcp"] }
-  }
-}
+MCPs sao instalados no **escopo de usuario** via `claude mcp add -s user ...`. Nao ha `.mcp.json` no repositorio.
+
+Para consultar estado vivo em qualquer momento:
+```bash
+claude mcp list
 ```
 
-### MCPs Pendentes
+### MCPs ATIVOS
 
-| MCP | Pacote | Requisitos |
-|-----|--------|-----------|
-| Obsidian | `obsidian-mcp` ou file-based | Caminho do vault |
-| Google Drive | `@anthropic/mcp-server-google-drive` | OAuth2 credentials |
+| MCP | Tipo | Status | Instalado em |
+|-----|------|--------|-------------|
+| Gmail (Anthropic oficial) | Remoto | Connected | anterior a 2026-04-12 |
+| Firecrawl | stdio (npx) | Validado | 2026-04-17 |
+
+**Nota sobre Firecrawl no `claude mcp list`:** aparece como "Failed to connect" — comportamento esperado para servidores stdio. Eles so inicializam quando Claude Code abre sessao nova. Handshake MCP validado manualmente (protocolo v2024-11-05, servidor `firecrawl-fastmcp` v3.0.0).
+
+Ver documentacao completa em: `C:\Users\pedro\Documents\mente\Operando\03-thauma\Tecnologia\MCPs_Ativos.md`
+
+### MCPs PLANEJADOS (nao instalados ainda)
+
+| MCP | Pacote | Requisitos | Prioridade |
+|-----|--------|------------|------------|
+| Brave Search | `@modelcontextprotocol/server-brave-search` | `BRAVE_API_KEY` | Alta |
+| Notion | `@notionhq/notion-mcp-server` | `NOTION_API_KEY` + compartilhar databases com integracao | Alta |
+| Google Drive | `@modelcontextprotocol/server-gdrive` | OAuth2 (Client ID, Secret) | Media |
+| Obsidian | file-based via Read/Write ja funciona | — | Redundante no momento |
+| BigQuery | dedicado | — | Baixa (Pitagoras opera via `bq` CLI) |
+
+### Comandos de instalacao padrao
+
+```bash
+claude mcp add brave-search -s user -e BRAVE_API_KEY=<chave> -- cmd /c npx -y @modelcontextprotocol/server-brave-search
+claude mcp add notion -s user -e NOTION_API_KEY=<token> -- cmd /c npx -y @notionhq/notion-mcp-server
+claude mcp add firecrawl -s user -e FIRECRAWL_API_KEY=<chave> -- cmd /c npx -y firecrawl-mcp
+```
+
+Ver plano de setup completo em `C:\Users\pedro\Documents\mente\Operando\03-thauma\Planos\Setup_Segunda_Maquina.md`.
 
 ---
 
@@ -66,29 +86,31 @@ Voce e subordinado a **Hefesto** (Gerente de Operacoes).
 ## OBSIDIAN (Base Interna)
 
 **Vault path:** `C:\Users\pedro\Documents\mente`
+**Sincronizacao:** Obsidian Sync (oficial). NAO e repositorio Git.
 
-Vault compartilhado do Pedro. Estrutura THAUMA dentro do vault (FLAT, organizado em `Operando/03-thauma/`):
+Vault compartilhado do Pedro. Estrutura THAUMA dentro do vault (estado real em 2026-04-12):
 
 ```
 Operando/03-thauma/
-├── Socrates.md                     (CEO, contexto persistente)
-├── Decisoes.md                     (registro de decisoes)
-├── Aprendizados.md                 (licoes aprendidas)
+├── Socrates.md                     (diario do CEO, contexto persistente)
+├── Decisoes.md                     (registro de decisoes estrategicas)
+├── Aprendizados.md                 (licoes operacionais)
 ├── Ideias Thauma.md                (backlog de ideias)
 ├── Roadmap Financeiro Thauma.md    (receita, metas)
-├── Tarefas Thauma.md               (inbox de tarefas)
-├── CRM - Leads.md                  (pipeline de prospects)
-├── Equipe/                         (notas por gerente: Pericles, Pitagoras, Solon, Tales, Arquimedes, Hefesto)
-├── leads/                          (fichas de prospects)
-├── Clientes/                       (clientes ativos)
-├── Projetos/                       (entregas por cliente)
-├── Reunioes/                       (atas, call logs)
-├── Conhecimento/                   (DATASUS, legislacao, metodologias)
-├── Tarefas/                        (tracking detalhado)
-└── Planos/                         (planos estrategicos)
+├── Clientes/                       (notas de clientes ativos + _INDEX)
+├── Produtos/                       (catalogo oficial + Pricing + _INDEX)
+├── leads/
+│   ├── _INDEX.md                   (tabela-mestra por temperatura)
+│   ├── quentes/                    (🔥 acao imediata)
+│   ├── mornos/                     (🟡 reativacao)
+│   ├── frios/                      (🧊 nutricao longa)
+│   └── conectores/                 (rede pessoal ativa)
+├── Equipe/                         (notas por gerente: 6 arquivos)
+├── Planos/                         (planos operacionais e estrategicos)
+└── _archive/                       (notas legadas)
 ```
 
-**Toda a equipe tem acesso de leitura/escrita.**
+**Toda a equipe tem acesso de leitura/escrita via Read/Write/Edit direto no path.**
 
 ---
 

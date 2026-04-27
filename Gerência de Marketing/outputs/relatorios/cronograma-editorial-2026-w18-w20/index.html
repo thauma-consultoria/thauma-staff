@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cronograma Editorial — 27/04 a 17/05/2026 | THAUMA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --azul: #001070;
+    --azul-claro: #0a1f8a;
+    --azul-mais-claro: #1a3aa8;
+    --branco: #FFFFFF;
+    --ciano: #40D7FF;
+    --ciano-suave: #b8eeff;
+    --cinza-fundo: #f4f6fb;
+    --cinza-borda: #d9deeb;
+    --cinza-texto: #4a5169;
+    --frente-portfolio: #001070;
+    --frente-tecnica: #6b3ed1;
+    --frente-tempestivo: #1f8a5a;
+    --status-pronto: #1f8a5a;
+    --status-rascunho: #c98a1a;
+    --status-aproduzir: #c44545;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Hahmlet', Georgia, serif;
+    background: var(--cinza-fundo);
+    color: var(--azul);
+    line-height: 1.55;
+    font-size: 15px;
+    padding: 32px 16px;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* CABEÇALHO */
+  header.topo {
+    background: var(--azul);
+    color: var(--branco);
+    padding: 36px 40px;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 4px solid var(--ciano);
+  }
+  header.topo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 8px;
+  }
+  header.topo .subtitulo {
+    font-size: 16px;
+    color: var(--ciano-suave);
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  header.topo .meta {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--ciano-suave);
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 14px;
+  }
+  header.topo .meta strong { color: var(--branco); font-weight: 600; }
+
+  /* SEÇÕES GENÉRICAS */
+  section {
+    background: var(--branco);
+    padding: 28px 40px;
+    border-left: 1px solid var(--cinza-borda);
+    border-right: 1px solid var(--cinza-borda);
+  }
+  section:last-of-type { border-radius: 0 0 8px 8px; border-bottom: 1px solid var(--cinza-borda); }
+  section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--azul);
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--cinza-borda);
+  }
+  section h2 .num {
+    color: var(--ciano);
+    font-weight: 700;
+    margin-right: 8px;
+  }
+
+  /* PAINEL DE FRENTES */
+  .frentes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .frente-card {
+    border-left: 4px solid;
+    padding: 14px 16px;
+    background: var(--cinza-fundo);
+    border-radius: 4px;
+  }
+  .frente-card .nome {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .frente-card .desc {
+    font-size: 13px;
+    color: var(--cinza-texto);
+  }
+  .frente-card .count {
+    font-size: 12px;
+    color: var(--cinza-texto);
+    margin-top: 6px;
+    font-weight: 600;
+  }
+  .frente-card.portfolio { border-color: var(--frente-portfolio); }
+  .frente-card.portfolio .nome { color: var(--frente-portfolio); }
+  .frente-card.tecnica { border-color: var(--frente-tecnica); }
+  .frente-card.tecnica .nome { color: var(--frente-tecnica); }
+  .frente-card.tempestivo { border-color: var(--frente-tempestivo); }
+  .frente-card.tempestivo .nome { color: var(--frente-tempestivo); }
+
+  /* TIMELINE */
+  .timeline {
+    background: var(--azul);
+    color: var(--branco);
+    padding: 24px 24px 18px 24px;
+    border-radius: 6px;
+    margin-top: 8px;
+  }
+  .timeline-titulo {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ciano);
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+  .timeline-trilho {
+    position: relative;
+    height: 60px;
+    padding: 0 12px;
+  }
+  .timeline-linha {
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    right: 12px;
+    height: 2px;
+    background: rgba(64, 215, 255, 0.35);
+  }
+  .timeline-pontos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+    z-index: 2;
+  }
+  .timeline-ponto {
+    text-align: center;
+    position: relative;
+  }
+  .timeline-ponto .marcador {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--ciano);
+    margin: 17px auto 8px auto;
+    border: 3px solid var(--azul);
+    box-shadow: 0 0 0 2px var(--ciano);
+  }
+  .timeline-ponto.portfolio .marcador { background: var(--frente-portfolio); box-shadow: 0 0 0 2px #4a5dd6; }
+  .timeline-ponto.tecnica .marcador { background: var(--frente-tecnica); box-shadow: 0 0 0 2px #a880f0; }
+  .timeline-ponto.tempestivo .marcador { background: var(--frente-tempestivo); box-shadow: 0 0 0 2px #5fc999; }
+  .timeline-ponto .data {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--branco);
+    letter-spacing: 0.3px;
+  }
+  .timeline-ponto .label {
+    font-size: 10px;
+    color: var(--ciano-suave);
+    margin-top: 2px;
+  }
+  .timeline-cadencia {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 12px;
+    color: var(--ciano-suave);
+    font-style: italic;
+  }
+
+  /* CARDS DE POST */
+  .post-card {
+    border: 1px solid var(--cinza-borda);
+    border-left: 6px solid var(--azul);
+    border-radius: 6px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    background: var(--branco);
+  }
+  .post-card.portfolio { border-left-color: var(--frente-portfolio); }
+  .post-card.tecnica { border-left-color: var(--frente-tecnica); }
+  .post-card.tempestivo { border-left-color: var(--frente-tempestivo); }
+
+  .post-header {
+    background: var(--cinza-fundo);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 1px solid var(--cinza-borda);
+  }
+  .post-header .esquerda {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .post-header .data-hora {
+    font-weight: 700;
+    color: var(--azul);
+    font-size: 15px;
+  }
+  .post-header .data-hora .dia {
+    color: var(--cinza-texto);
+    font-weight: 500;
+    font-size: 13px;
+    margin-left: 4px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--branco);
+  }
+  .badge.portfolio { background: var(--frente-portfolio); }
+  .badge.tecnica { background: var(--frente-tecnica); }
+  .badge.tempestivo { background: var(--frente-tempestivo); }
+
+  .badge-status {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  .badge-status.pronto { background: var(--status-pronto); color: var(--branco); }
+  .badge-status.rascunho { background: var(--status-rascunho); color: var(--branco); }
+  .badge-status.aproduzir { background: var(--status-aproduzir); color: var(--branco); }
+  .badge-status.imutavel { background: var(--azul); color: var(--ciano); border: 1px solid var(--ciano); }
+
+  .post-body {
+    padding: 20px 24px;
+  }
+  .post-titulo {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--azul);
+    margin-bottom: 6px;
+    line-height: 1.35;
+  }
+  .post-tema {
+    font-size: 13px;
+    color: var(--cinza-texto);
+    font-style: italic;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed var(--cinza-borda);
+  }
+  .post-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .post-bloco h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--cinza-texto);
+    margin-bottom: 6px;
+    font-weight: 700;
+  }
+  .post-bloco p {
+    font-size: 13px;
+    color: var(--azul);
+    line-height: 1.5;
+  }
+  .post-bloco code {
+    background: var(--cinza-fundo);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+    color: var(--azul-claro);
+  }
+
+  .acoes-pedro {
+    margin-top: 18px;
+    padding: 14px 18px;
+    background: linear-gradient(180deg, #fffbe8 0%, #fff5d2 100%);
+    border-left: 3px solid var(--ciano);
+    border-radius: 4px;
+  }
+  .acoes-pedro h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: var(--azul);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .acoes-pedro ul {
+    list-style: none;
+  }
+  .acoes-pedro li {
+    font-size: 13px;
+    padding: 5px 0;
+    color: var(--azul);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .acoes-pedro li::before {
+    content: "☐";
+    color: var(--azul);
+    font-size: 16px;
+    line-height: 1;
+    margin-top: 1px;
+    flex-shrink: 0;
+  }
+  .acoes-pedro li.deadline {
+    font-weight: 600;
+    color: var(--azul);
+  }
+  .acoes-pedro li.deadline::before {
+    content: "►";
+    color: var(--ciano);
+    font-size: 12px;
+    margin-top: 3px;
+  }
+  .acoes-pedro li.lembrete {
+    color: var(--azul-claro);
+    font-style: italic;
+  }
+  .acoes-pedro li.lembrete::before {
+    content: "★";
+    color: var(--frente-tecnica);
+    margin-top: 2px;
+  }
+
+  /* PENDÊNCIAS PEDRO */
+  .tabela-pendencias {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .tabela-pendencias th, .tabela-pendencias td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--cinza-borda);
+  }
+  .tabela-pendencias th {
+    background: var(--azul);
+    color: var(--branco);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font-size: 11px;
+  }
+  .tabela-pendencias tr:nth-child(even) td { background: var(--cinza-fundo); }
+  .tabela-pendencias td.data { font-weight: 700; color: var(--azul); white-space: nowrap; }
+  .tabela-pendencias td.urgente { color: var(--status-aproduzir); font-weight: 700; }
+
+  /* TRADEOFFS */
+  .tradeoffs {
+    background: var(--cinza-fundo);
+    padding: 20px 24px;
+    border-radius: 6px;
+    border-left: 4px solid var(--ciano);
+  }
+  .tradeoffs ul {
+    list-style: none;
+  }
+  .tradeoffs li {
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--cinza-borda);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .tradeoffs li:last-child { border-bottom: none; }
+  .tradeoffs li strong {
+    color: var(--azul);
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 700;
+  }
+  .tradeoffs li span {
+    color: var(--cinza-texto);
+  }
+
+  /* DECISÃO OPENMED */
+  .decisao-openmed {
+    background: #fff5d2;
+    border: 1px solid #c98a1a;
+    border-left: 6px solid var(--status-rascunho);
+    padding: 20px 24px;
+    border-radius: 6px;
+    margin-top: 14px;
+  }
+  .decisao-openmed h3 {
+    font-size: 15px;
+    color: var(--azul);
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .decisao-openmed p {
+    font-size: 13px;
+    color: var(--azul);
+    margin-bottom: 8px;
+    line-height: 1.55;
+  }
+  .decisao-openmed .veredicto {
+    font-weight: 700;
+    color: var(--status-aproduzir);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+
+  /* RODAPÉ */
+  footer {
+    margin-top: 24px;
+    padding: 22px 28px;
+    background: var(--azul);
+    color: var(--ciano-suave);
+    border-radius: 6px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.7;
+  }
+  footer code {
+    background: rgba(64,215,255,0.12);
+    color: var(--ciano);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+  }
+  footer .marca {
+    color: var(--branco);
+    font-weight: 700;
+    margin-top: 10px;
+    display: block;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 768px) {
+    .frentes-grid { grid-template-columns: 1fr; }
+    .post-grid { grid-template-columns: 1fr; }
+    .timeline-pontos { grid-template-columns: repeat(7, 1fr); }
+    .timeline-ponto .data { font-size: 9px; }
+    section, header.topo { padding: 22px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header class="topo">
+  <h1>Cronograma Editorial — 27/04 a 17/05/2026</h1>
+  <div class="subtitulo">Plano de 3 semanas | 7 publicações | 3 frentes editoriais</div>
+  <div class="meta">
+    <span><strong>Gerado em:</strong> 26/04/2026</span>
+    <span><strong>Status:</strong> Aprovado por Pedro</span>
+    <span><strong>Caminho:</strong> Plano v1.2 (atualizar pós-sessão)</span>
+    <span><strong>Próxima revisão:</strong> Conselho #2 em 19/05</span>
+  </div>
+</header>
+
+<section>
+  <h2><span class="num">01.</span>Visão geral em um painel</h2>
+
+  <div class="frentes-grid">
+    <div class="frente-card portfolio">
+      <div class="nome">Portfolio IA</div>
+      <div class="desc">Ciclo 1 da campanha de fundação — Manifesto, Promessa, Dashboard, RAG.</div>
+      <div class="count">4 publicações no plano</div>
+    </div>
+    <div class="frente-card tecnica">
+      <div class="nome">Jornada Técnica</div>
+      <div class="desc">Frente nova. Audiência tech/builders. Estreia com setup do agente pessoal.</div>
+      <div class="count">1 publicação no plano (estreia)</div>
+    </div>
+    <div class="frente-card tempestivo">
+      <div class="nome">Dado Tempestivo</div>
+      <div class="desc">Série "O DATASUS revela". Recorrência inspirada em performance dos posts 23/04 e 24/04.</div>
+      <div class="count">1 publicação no plano (estreia da série)</div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-titulo">Linha do tempo — segundas e quintas, 9h</div>
+    <div class="timeline-trilho">
+      <div class="timeline-linha"></div>
+      <div class="timeline-pontos">
+        <div class="timeline-ponto portfolio"><div class="marcador"></div><div class="data">27/04</div><div class="label">Manifesto</div></div>
+        <div class="timeline-ponto portfolio"><div class="marcador"></div><div class="data">30/04</div><div class="label">Promessa</div></div>
+        <div class="timeline-ponto portfolio"><div class="marcador"></div><div class="data">04/05</div><div class="label">Dashboard</div></div>
+        <div class="timeline-ponto tecnica"><div class="marcador"></div><div class="data">07/05</div><div class="label">Setup Agente</div></div>
+        <div class="timeline-ponto tempestivo"><div class="marcador"></div><div class="data">11/05</div><div class="label">DATASUS Revela #1</div></div>
+        <div class="timeline-ponto portfolio"><div class="marcador"></div><div class="data">14/05</div><div class="label">RAG</div></div>
+        <div class="timeline-ponto portfolio"><div class="marcador"></div><div class="data">18/05</div><div class="label">Pergunta Incômoda</div></div>
+      </div>
+    </div>
+    <div class="timeline-cadencia">Cadência fixa: segunda e quinta, 9h da manhã</div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">02.</span>Cards detalhados por publicação</h2>
+
+  <!-- POST 1 -->
+  <div class="post-card portfolio">
+    <div class="post-header">
+      <div class="esquerda">
+        <span class="data-hora">27/04 — 9h00 <span class="dia">segunda</span></span>
+        <span class="badge portfolio">Portfolio IA</span>
+        <span class="badge-status imutavel">Agendado · Imutável</span>
+      </div>
+      <span class="badge-status pronto">Pronto</span>
+    </div>
+    <div class="post-body">
+      <div class="post-titulo">#01 — Manifesto Portfolio IA</div>
+      <div class="post-tema">Abertura do Ciclo 1: declaração de tese sobre o portfólio de IA aplicada à saúde pública.</div>
+      <div class="post-grid">
+        <div class="post-bloco">
+          <h4>Owner de produção</h4>
+          <p>Encerrado — visual produzido por Pedro, copy validada via humanizer.</p>
+        </div>
+        <div class="post-bloco">
+          <h4>Material-origem</h4>
+          <p>Plano editorial Portfolio IA (v1.2) — rascunho aprovado em 21/04.</p>
+        </div>
+      </div>
+      <div class="acoes-pedro">
+        <h4>Ações de Pedro</h4>
+        <ul>
+          <li class="deadline">Publicação automática às 9h via agendamento LinkedIn — sem ação manual</li>
+          <li>Confirmar visual carregado no agendamento até hoje 26/04 23h</li>
+          <li class="lembrete">Pinar este post no perfil após publicação (único pinado do ciclo)</li>
+          <li>Monitorar primeiras 3h de engajamento e responder comentários até 12h30</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- POST 2 -->
+  <div class="post-card portfolio">
+    <div class="post-header">
+      <div class="esquerda">
+        <span class="data-hora">30/04 — 9h00 <span class="dia">quinta</span></span>
+        <span class="badge portfolio">Portfolio IA</span>
+      </div>
+      <span class="badge-status rascunho">Rascunho V3 · Falta visual</span>
+    </div>
+    <div class="post-body">
+      <div class="post-titulo">#02 — Promessa</div>
+      <div class="post-tema">Articula o que o portfólio entrega: a promessa concreta para gestor de saúde e prestador SUS.</div>
+      <div class="post-grid">
+        <div class="post-bloco">
+          <h4>Owner de produção</h4>
+          <p>Calíope (copy V3 aprovado) + Dédalo (visual em produção).</p>
+        </div>
+        <div class="post-bloco">
+          <h4>Material-origem</h4>
+          <p>Plano editorial Portfolio IA — rascunho V3 humanizado.</p>
+        </div>
+      </div>
+      <div class="acoes-pedro">
+        <h4>Ações de Pedro</h4>
+        <ul>
+          <li>Revisar copy V3 final pós-humanizer</li>
+          <li>Validar visual de Dédalo quando entregue</li>
+          <li class="deadline">Deadline interno: visual fechado até 28/04 18h</li>
+          <li>Decidir: publicação manual ou agendar no LinkedIn em 29/04 noite</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- POST 3 -->
+  <div class="post-card portfolio">
+    <div class="post-header">
+      <div class="esquerda">
+        <span class="data-hora">04/05 — 9h00 <span class="dia">segunda</span></span>
+        <span class="badge portfolio">Portfolio IA</span>
+      </div>
+      <span class="badge-status rascunho">Rascunho V2 · Carrossel em produção</span>
+    </div>
+    <div class="post-body">
+      <div class="post-titulo">#03 — Dashboard</div>
+      <div class="post-tema">Demonstração visual: como dado de saúde pública vira inteligência operável via dashboard.</div>
+      <div class="post-grid">
+        <div class="post-bloco">
+          <h4>Owner de produção</h4>
+          <p>Calíope (copy V2) + Dédalo (carrossel — entrega prevista 02/05).</p>
+        </div>
+        <div class="post-bloco">
+          <h4>Material-origem</h4>
+          <p>Plano editorial Portfolio IA + checklist de compliance Post #03 (6 critérios obrigatórios).</p>
+        </div>
+      </div>
+      <div class="acoes-pedro">
+        <h4>Ações de Pedro</h4>
+        <ul>
+          <li>Aplicar checklist de compliance Post #03 antes de aprovar (6 critérios — ver memória)</li>
+          <li>Revisar copy V2 e carrossel de Dédalo</li>
+          <li class="deadline">Deadline interno: pacote fechado até 03/05 18h</li>
+          <li>Publicação preferencial agendada (carrossel exige preview LinkedIn)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- POST 4 -->
+  <div class="post-card tecnica">
+    <div class="post-header">
+      <div class="esquerda">
+        <span class="data-hora">07/05 — 9h00 <span class="dia">quinta</span></span>
+        <span class="badge tecnica">Jornada Técnica · ESTREIA</span>
+      </div>
+      <span class="badge-status rascunho">Rascunho completo · Falta diagrama</span>
+    </div>
+    <div class="post-body">
+      <div class="post-titulo">Setup definitivo do agente pessoal — Hermes + Kimi K2.6 + Obsidian</div>
+      <div class="post-tema">Estreia da terceira frente editorial. Audiência tech/builders. Case real de stack pessoal de IA.</div>
+      <div class="post-grid">
+        <div class="post-bloco">
+          <h4>Owner de produção</h4>
+          <p>Pedro (autor do case + voz técnica) + Calíope (revisão de tom) + Dédalo (diagrama de stack).</p>
+        </div>
+        <div class="post-bloco">
+          <h4>Material-origem</h4>
+          <p>Case completo em <code>cases/post-linkedin-setup-agente-pessoal-hermes.md</code> — hook, 5 seções, CTA.</p>
+        </div>
+      </div>
+      <div class="acoes-pedro">
+        <h4>Ações de Pedro</h4>
+        <ul>
+          <li>Revisar rascunho do case e marcar o que mantém / corta para versão LinkedIn (rascunho é longo)</li>
+          <li>Definir CTA final: convite para conversa? Newsletter? Repo?</li>
+          <li>Briefar Dédalo no diagrama de stack (Hermes + Kimi K2.6 + Obsidian + MCPs)</li>
+          <li class="deadline">Deadline interno: copy final aprovado até 04/05 18h | diagrama até 06/05 12h</li>
+          <li class="lembrete">Atenção: estreia de frente nova — primeira impressão importa para audiência tech</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- POST 5 -->
+  <div class="post-card tempestivo">
+    <div class="post-header">
+      <div class="esquerda">
+        <span class="data-hora">11/05 — 9h00 <span class="dia">segunda</span></span>
+        <span class="badge tempestivo">Dado Tempestivo · ESTREIA SÉRIE</span>
+      </div>
+      <span class="badge-status aproduzir">A produzir</span>
+    </div>
+    <div class="post-body">
+      <div class="post-titulo">"O DATASUS revela" #1 — Fluxo extra-municipal</div>
+      <div class="post-tema">Estreia da série de recorrência editorial. Dado de banco que revela algo invisível ao gestor médio: para onde os pacientes saem do município.</div>
+      <div class="post-grid">
+        <div class="post-bloco">
+          <h4>Owner de produção</h4>
+          <p>Euclides (consulta SAT/SIH para dado-base) + Calíope (copy) + Dédalo (visual de fluxo).</p>
+        </div>
+        <div class="post-bloco">
+          <h4>Material-origem</h4>
+          <p>Banco de ideias + performance dos posts 23/04 (1.289 imp) e 24/04 (1.930 imp, +49%) — tese "subutilização do DATASUS" validada em duas ocorrências.</p>
+        </div>
+      </div>
+      <div class="acoes-pedro">
+        <h4>Ações de Pedro</h4>
+        <ul>
+          <li>Briefar Euclides no recorte: município-foco + procedimento-foco + janela temporal</li>
+          <li>Aprovar dado-base antes de Calíope começar copy (sem dado, sem post)</li>
+          <li>Validar nome canônico da série: "O DATASUS revela" vs alternativas</li>
+          <li class="deadline">Deadline interno: dado-base fechado até 06/05 | copy + visual até 09/05 18h</li>
+          <li class="lembrete">Estreia de série: este post define o template visual e tonal das próximas edições</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- POST 6 -->
+  <div class="post-card portfolio">
+    <div class="post-header">
+      <div class="esquerda">
+        <span class="data-hora">14/05 — 9h00 <span class="dia">quinta</span></span>
+        <span class="badge portfolio">Portfolio IA · Fechamento</span>
+      </div>
+      <span class="badge-status rascunho">Rascunho · Depende de #03</span>
+    </div>
+    <div class="post-body">
+      <div class="post-titulo">#04 — RAG</div>
+      <div class="post-tema">Fechamento técnico do Ciclo 1: como RAG (retrieval-augmented generation) ancora as decisões em dados verificáveis.</div>
+      <div class="post-grid">
+        <div class="post-bloco">
+          <h4>Owner de produção</h4>
+          <p>Calíope (copy) + Dédalo (visual). Dependência narrativa: precisa do #03 publicado e absorvido pela audiência.</p>
+        </div>
+        <div class="post-bloco">
+          <h4>Material-origem</h4>
+          <p>Plano editorial Portfolio IA — fechamento da arco narrativo Manifesto → Promessa → Dashboard → RAG.</p>
+        </div>
+      </div>
+      <div class="acoes-pedro">
+        <h4>Ações de Pedro</h4>
+        <ul>
+          <li>Revisar rascunho após #03 publicado (ler reações ao #03 antes de fechar #04)</li>
+          <li>Validar que #04 fecha o arco sem repetir argumentos do #03</li>
+          <li class="deadline">Deadline interno: pacote fechado até 13/05 18h</li>
+          <li>Decidir se vale newsletter de consolidação do Ciclo 1 entre #04 e Pergunta Incômoda</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- POST 7 -->
+  <div class="post-card portfolio">
+    <div class="post-header">
+      <div class="esquerda">
+        <span class="data-hora">18/05 — 9h00 <span class="dia">segunda</span></span>
+        <span class="badge portfolio">Provocação · Banco #68</span>
+      </div>
+      <span class="badge-status aproduzir">A produzir</span>
+    </div>
+    <div class="post-body">
+      <div class="post-titulo">Pergunta Incômoda #1</div>
+      <div class="post-tema">Provocação intencional: pergunta-cunha que o gestor de saúde pública evita fazer. Fora da janela 27/04-17/05, incluído como emenda para visão de continuidade pós-Ciclo 1.</div>
+      <div class="post-grid">
+        <div class="post-bloco">
+          <h4>Owner de produção</h4>
+          <p>Calíope (copy provocativo) + Pedro (curadoria da pergunta).</p>
+        </div>
+        <div class="post-bloco">
+          <h4>Material-origem</h4>
+          <p>Banco THAUMA de ideias de conteúdo — item #68.</p>
+        </div>
+      </div>
+      <div class="acoes-pedro">
+        <h4>Ações de Pedro</h4>
+        <ul>
+          <li>Selecionar a pergunta-foco a partir do banco #68 (até 12/05)</li>
+          <li>Revisar copy de Calíope com lente "incômodo é proporcional ao ângulo, não à agressividade"</li>
+          <li class="deadline">Deadline interno: pacote fechado até 17/05 18h</li>
+          <li class="lembrete">Conselho #2 em 19/05 — este post é o último insumo da janela atual</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section>
+  <h2><span class="num">03.</span>Painel de pendências de Pedro — cronologia operacional</h2>
+
+  <table class="tabela-pendencias">
+    <thead>
+      <tr>
+        <th>Até</th>
+        <th>O que Pedro precisa fazer</th>
+        <th>Para qual post</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="data urgente">26/04 23h</td><td>Confirmar visual carregado no agendamento LinkedIn</td><td>#01 Manifesto</td></tr>
+      <tr><td class="data">28/04 18h</td><td>Visual #02 fechado (Dédalo entrega + Pedro valida)</td><td>#02 Promessa</td></tr>
+      <tr><td class="data">29/04 noite</td><td>Decidir se #02 sai manual ou agendado e configurar</td><td>#02 Promessa</td></tr>
+      <tr><td class="data">02/05</td><td>Revisar standby OpenMed (gancho perecível pode esfriar)</td><td>Decisão editorial</td></tr>
+      <tr><td class="data">03/05 18h</td><td>Aplicar checklist de compliance #03 + aprovar pacote</td><td>#03 Dashboard</td></tr>
+      <tr><td class="data">04/05 18h</td><td>Aprovar copy final do case agente pessoal</td><td>#07 Setup Agente</td></tr>
+      <tr><td class="data">06/05</td><td>Briefar Euclides no recorte da série DATASUS Revela</td><td>#11 DATASUS Revela #1</td></tr>
+      <tr><td class="data">06/05 12h</td><td>Validar diagrama de stack de Dédalo</td><td>#07 Setup Agente</td></tr>
+      <tr><td class="data">09/05 18h</td><td>Aprovar copy + visual da estreia da série</td><td>#11 DATASUS Revela #1</td></tr>
+      <tr><td class="data">12/05</td><td>Selecionar pergunta-foco do banco #68</td><td>#18 Pergunta Incômoda</td></tr>
+      <tr><td class="data">13/05 18h</td><td>Aprovar pacote final #04 RAG</td><td>#04 RAG</td></tr>
+      <tr><td class="data">17/05 18h</td><td>Aprovar pacote final Pergunta Incômoda</td><td>#18 Pergunta Incômoda</td></tr>
+      <tr><td class="data">19/05</td><td>Conselho #2 — revisão de plano e início da próxima janela</td><td>Governança</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="num">04.</span>Tradeoffs assumidos no plano</h2>
+
+  <div class="tradeoffs">
+    <ul>
+      <li>
+        <strong>Estrear Jornada Técnica em 07/05 (Caminho 1) ao invés de adiar para junho.</strong>
+        <span>Otimiza: aproveitar rascunho completo já existente e momentum de audiência tech. Sacrifica: concentração total no Ciclo 1 Portfolio IA. Justifica-se porque o case está pronto e a frente é estruturante para 2026.</span>
+      </li>
+      <li>
+        <strong>Estrear "O DATASUS revela" em 11/05 com dado de banco, não com OpenMed.</strong>
+        <span>Otimiza: nascimento canônico da série (dado de banco, fluxo extra-municipal). Sacrifica: gancho perecível do OpenMed. Justifica-se porque a série precisa de tese própria; OpenMed é munição para Higia/Newsletter, não estreia de série.</span>
+      </li>
+      <li>
+        <strong>Cadência segunda + quinta às 9h, sem exceções.</strong>
+        <span>Otimiza: previsibilidade para a audiência e agenda enxuta para Pedro. Sacrifica: flexibilidade para reagir a achados de radar dentro da janela. Justifica-se porque a janela 27/04-17/05 é de execução, não de improviso.</span>
+      </li>
+      <li>
+        <strong>#01 Manifesto é o único post pinado do ciclo.</strong>
+        <span>Otimiza: peso narrativo do Manifesto como porta de entrada do perfil. Sacrifica: visibilidade prolongada dos posts seguintes. Justifica-se porque pin rotativo dilui o efeito do Manifesto e gera ruído de manutenção.</span>
+      </li>
+      <li>
+        <strong>RAG (#04) depende narrativamente de Dashboard (#03) — não pode ser produzido em paralelo.</strong>
+        <span>Otimiza: coerência do arco. Sacrifica: paralelismo de produção. Justifica-se porque #04 deve responder reações ao #03.</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="decisao-openmed">
+    <h3>Decisão registrada — OpenMed (achado 25/04)</h3>
+    <p><span class="veredicto">Veredicto: Não encaixar na janela 27/04-17/05.</span></p>
+    <p><strong>Por quê:</strong> (1) usar OpenMed como "DATASUS Revela #1" descaracteriza a estreia da série — a série precisa nascer com dado de banco, não achado de radar; (2) adicionar quarta frente (privacidade) na janela já carregada fragmenta a narrativa; (3) o uso natural do OpenMed é como munição da tese Higia (privacidade como moat), não como post avulso de portfólio.</p>
+    <p><strong>Destino:</strong> entrar como conteúdo de Newsletter Aletheia na edição que precede o lançamento Higia. Caso a janela Higia atrase além de meados de maio, reavaliar como post solo na janela seguinte (19/05+).</p>
+    <p><strong>Status:</strong> candidato perecível em standby. Sócrates revisa em 02/05 — se gancho perdeu força, fica em arquivo permanente da Higia.</p>
+  </div>
+</section>
+
+<footer>
+  Plano persistido em <code>Operando/03-thauma/Planos/plano-editorial-portfolio-pedro.md v1.2</code> — atualizar após esta sessão.<br>
+  Próxima revisão de cronograma: <strong>Conselho #2 em 19/05/2026</strong>.<br>
+  <span class="marca">Péricles · Gerência de Marketing · THAUMA Inteligência & Narrativa em Saúde</span>
+</footer>
+
+</div>
+</body>
+</html>

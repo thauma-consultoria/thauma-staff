@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Levantamento Nacional de Cirurgias Cardiovasculares — SUS 2025 | THAUMA</title>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Hahmlet', Georgia, serif;
+    background-color: #f4f4f4;
+    color: #1a1a2e;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+  }
+
+  /* ——— CABEÇALHO ——— */
+  .header {
+    background-color: #001070;
+    padding: 32px 40px 28px 40px;
+    position: relative;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo-wordmark {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .logo-sub {
+    font-family: 'Hahmlet', Georgia, serif;
+    font-weight: 400;
+    font-size: 9px;
+    color: #40D7FF;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  .header-meta {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .header-meta .client-name {
+    font-size: 11px;
+    color: #40D7FF;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+
+  .header-meta .date {
+    font-size: 10px;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.5px;
+  }
+
+  .header-title-block {
+    border-top: 1px solid rgba(64, 215, 255, 0.25);
+    padding-top: 18px;
+  }
+
+  .header-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    margin-bottom: 6px;
+  }
+
+  .header-subtitle {
+    font-family: 'Hahmlet', Georgia, serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255,255,255,0.65);
+    font-style: italic;
+  }
+
+  .cyan-bar {
+    height: 3px;
+    background: linear-gradient(90deg, #40D7FF 0%, rgba(64,215,255,0.2) 100%);
+  }
+
+  /* ——— CORPO ——— */
+  .body-content {
+    padding: 32px 40px 28px 40px;
+  }
+
+  /* ——— BLOCO 1: O QUE FOI ENTREGUE ——— */
+  .section {
+    margin-bottom: 26px;
+  }
+
+  .section-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 8px;
+    color: #40D7FF;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    border-left: 2px solid #40D7FF;
+    padding-left: 8px;
+  }
+
+  .section-body {
+    font-family: 'Hahmlet', Georgia, serif;
+    font-size: 11.5px;
+    color: #2a2a3e;
+    line-height: 1.75;
+  }
+
+  /* ——— BLOCO 2: KPIs ——— */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .kpi-card {
+    background: #001070;
+    border-radius: 4px;
+    padding: 14px 12px 12px 12px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .kpi-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #40D7FF;
+  }
+
+  .kpi-card.highlight {
+    background: #001070;
+    border: 1px solid rgba(64, 215, 255, 0.4);
+  }
+
+  .kpi-value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #40D7FF;
+    line-height: 1;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .kpi-value.placeholder {
+    font-size: 16px;
+    color: rgba(64, 215, 255, 0.55);
+    letter-spacing: 0.5px;
+  }
+
+  .kpi-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8.5px;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .kpi-grid-secondary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 0;
+  }
+
+  .kpi-card-secondary {
+    background: #f8f9ff;
+    border: 1px solid #e0e4f0;
+    border-radius: 4px;
+    padding: 12px 10px;
+    text-align: center;
+    border-top: 3px solid #001070;
+  }
+
+  .kpi-value-secondary {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #001070;
+    line-height: 1;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .kpi-label-secondary {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    color: #5a5a7a;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .kpi-disclaimer {
+    font-family: 'Hahmlet', Georgia, serif;
+    font-size: 9px;
+    color: #888;
+    font-style: italic;
+    margin-top: 8px;
+    text-align: right;
+  }
+
+  /* ——— BLOCO 3: METODOLOGIA ——— */
+  .method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .method-card {
+    border: 1px solid #e0e4f0;
+    border-radius: 4px;
+    padding: 14px 13px;
+    background: #ffffff;
+    border-top: 3px solid #001070;
+  }
+
+  .method-step {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 9px;
+    color: #40D7FF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    background: #001070;
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 2px;
+  }
+
+  .method-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #001070;
+    margin-bottom: 6px;
+    margin-top: 7px;
+  }
+
+  .method-body {
+    font-family: 'Hahmlet', Georgia, serif;
+    font-size: 10px;
+    color: #4a4a6a;
+    line-height: 1.6;
+  }
+
+  /* ——— BLOCO 4: RIGOR ——— */
+  .rigor-box {
+    background: #f8f9ff;
+    border: 1px solid #c8d0e8;
+    border-left: 4px solid #40D7FF;
+    border-radius: 4px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .rigor-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    color: #001070;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .rigor-text {
+    font-family: 'Hahmlet', Georgia, serif;
+    font-size: 10.5px;
+    color: #2a2a4a;
+    line-height: 1.65;
+  }
+
+  .rigor-text strong {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #001070;
+  }
+
+  /* ——— BLOCO 5: GUIA DE LEITURA ——— */
+  .reading-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .reading-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 10px;
+    background: #f8f9ff;
+    border-radius: 4px;
+    border: 1px solid #e8eaf4;
+  }
+
+  .reading-aba {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: #ffffff;
+    background: #001070;
+    border-radius: 3px;
+    padding: 3px 7px;
+    flex-shrink: 0;
+    min-width: 30px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .reading-desc {
+    font-family: 'Hahmlet', Georgia, serif;
+    font-size: 9.5px;
+    color: #3a3a5a;
+    line-height: 1.5;
+  }
+
+  .reading-desc strong {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #001070;
+    font-size: 9px;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  /* ——— BLOCO 6: CONTINUIDADE ——— */
+  .continuity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .continuity-card {
+    background: #001070;
+    border-radius: 4px;
+    padding: 14px 15px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .continuity-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #40D7FF;
+  }
+
+  .continuity-tag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #40D7FF;
+    margin-bottom: 5px;
+  }
+
+  .continuity-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12.5px;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+
+  .continuity-desc {
+    font-family: 'Hahmlet', Georgia, serif;
+    font-size: 9.5px;
+    color: rgba(255,255,255,0.68);
+    line-height: 1.55;
+  }
+
+  .continuity-cta {
+    background: #f0f2fa;
+    border: 1px solid #d0d5e8;
+    border-left: 3px solid #40D7FF;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-family: 'Hahmlet', Georgia, serif;
+    font-size: 10px;
+    color: #2a2a4a;
+    line-height: 1.6;
+  }
+
+  .continuity-cta strong {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #001070;
+  }
+
+  /* ——— DIVISOR ——— */
+  .divider {
+    height: 1px;
+    background: #e8eaf4;
+    margin: 20px 0;
+  }
+
+  /* ——— RODAPÉ ——— */
+  .footer {
+    background: #001070;
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-tagline {
+    font-family: 'Hahmlet', Georgia, serif;
+    font-style: italic;
+    font-size: 10px;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.3px;
+  }
+
+  .footer-contact {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.7;
+  }
+
+  .footer-contact a {
+    color: #40D7FF;
+    text-decoration: none;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { box-shadow: none; margin: 0; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ——— CABEÇALHO ——— -->
+  <div class="header">
+    <div class="header-top">
+      <div class="logo-area">
+        <div>
+          <div class="logo-wordmark">THAUMA</div>
+          <div class="logo-sub">Inteligência &amp; Narrativa em Saúde</div>
+        </div>
+      </div>
+      <div class="header-meta">
+        <div class="client-name">Dr. Maikon Almeida &middot; GSS Saúde</div>
+        <div class="date">27 de abril de 2026</div>
+      </div>
+    </div>
+    <div class="header-title-block">
+      <div class="header-title">Levantamento Nacional de Cirurgias Cardiovasculares — SUS 2025</div>
+      <div class="header-subtitle">Nota de valorização da entrega — o que foi feito, como foi feito, o que os números representam</div>
+    </div>
+  </div>
+  <div class="cyan-bar"></div>
+
+  <!-- ——— CORPO ——— -->
+  <div class="body-content">
+
+    <!-- BLOCO 1: O QUE FOI ENTREGUE -->
+    <div class="section">
+      <div class="section-label">O que foi entregue</div>
+      <div class="section-body">
+        Do universo completo de Autorizações de Internação Hospitalar do SIH-SUS em 2025 — dezenas de milhões de registros, cada um representando uma internação processada e remunerada pelo sistema público nacional — extraímos, filtramos e validamos todas as ocorrências cujo procedimento efetivamente realizado pertencia a 23 códigos SIGTAP de cirurgia cardiovascular, organizados em três grupos de especificidade crescente. O resultado: <strong>206.427 cirurgias isoladas, distribuídas por 1.388 hospitais prestadores em todas as 27 unidades da federação,</strong> consolidadas em planilha de seis abas com trilha metodológica auditável do dado bruto ao número final.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- BLOCO 2: NÚMEROS DE IMPACTO -->
+    <div class="section">
+      <div class="section-label">Escala do processamento</div>
+
+      <div class="kpi-grid" style="margin-bottom: 12px;">
+        <div class="kpi-card">
+          <span class="kpi-value">14.621.600</span>
+          <div class="kpi-label">AIHs do SIH-SUS 2025<br>processadas</div>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-value">470.360</span>
+          <div class="kpi-label">estabelecimentos CNES<br>cruzados</div>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-value">23</span>
+          <div class="kpi-label">códigos SIGTAP<br>× dezenas de CIDs validados</div>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-value">27</span>
+          <div class="kpi-label">unidades da federação<br>cobertas</div>
+        </div>
+      </div>
+
+      <div class="kpi-grid-secondary">
+        <div class="kpi-card-secondary">
+          <span class="kpi-value-secondary">1.388</span>
+          <div class="kpi-label-secondary">Hospitais prestadores<br>identificados</div>
+        </div>
+        <div class="kpi-card-secondary" style="border-top-color: #40D7FF;">
+          <span class="kpi-value-secondary" style="color: #001070;">206.427</span>
+          <div class="kpi-label-secondary">Cirurgias cardiovasculares<br>isoladas — resultado final</div>
+        </div>
+        <div class="kpi-card-secondary">
+          <span class="kpi-value-secondary">10.884</span>
+          <div class="kpi-label-secondary">Óbitos analisados<br>— taxa nacional: <strong>5,27%</strong></div>
+        </div>
+      </div>
+
+      <div class="kpi-disclaimer">* Os dois campos marcados com {{placeholder}} serão preenchidos com os totais exatos fornecidos por Pitágoras.</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- BLOCO 3: METODOLOGIA -->
+    <div class="section">
+      <div class="section-label">Metodologia — 3 etapas</div>
+      <div class="method-grid">
+        <div class="method-card">
+          <div class="method-step">Etapa 1</div>
+          <div class="method-title">Extração</div>
+          <div class="method-body">Pacote <em>microdatasus</em> em R, cobertura nacional 2025 calendário completo. Base primária: SIH-SUS (arquivos RD), fonte oficial do Ministério da Saúde. Nenhum dado de terceiro ou estimativa.</div>
+        </div>
+        <div class="method-card">
+          <div class="method-step">Etapa 2</div>
+          <div class="method-title">Filtragem</div>
+          <div class="method-body">23 códigos SIGTAP em três grupos de especificidade — SIGTAP puro, SIGTAP com filtro de CID principal, e códigos específicos com par diagnóstico composto. Regras documentadas e auditáveis por qualquer analista externo.</div>
+        </div>
+        <div class="method-card">
+          <div class="method-step">Etapa 3</div>
+          <div class="method-title">Agregação e enriquecimento</div>
+          <div class="method-body">Base proprietária THAUMA de 637 mil estabelecimentos CNES para nome fantasia; dimensões SIGTAP, CID-10 e IBGE incorporadas; mortalidade calculada via campo <em>MORTE = 1</em> em AIHs com <em>PROC_REA</em> no escopo.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- BLOCO 4: RIGOR -->
+    <div class="section">
+      <div class="section-label">Rigor e rastreabilidade</div>
+      <div class="rigor-box">
+        <div class="rigor-icon">&#9650;</div>
+        <div class="rigor-text">
+          <strong>Cada número desta entrega passou por bateria de validação</strong> — consistência interna (cruzamento entre abas, totais independentes), verificação de completude por UF e por período, e spot checks contra benchmarks da literatura cardiovascular. O detalhamento completo consta no <em>relatório de validação</em> que acompanha esta entrega. Adicionalmente, o script R reproduzível entregue em <em>cardio_sus_2025_gss.R</em> permite que qualquer terceiro replique o resultado do zero — não há caixa-preta entre o dado público e o número final.
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- BLOCO 5: GUIA DE LEITURA -->
+    <div class="section">
+      <div class="section-label">Como ler a planilha</div>
+      <div class="reading-grid">
+        <div class="reading-item">
+          <div class="reading-aba">2</div>
+          <div class="reading-desc">
+            <strong>Resumo Executivo</strong>
+            Panorama nacional + Top 10 volume e mortalidade. Leitura completa em menos de 2 minutos.
+          </div>
+        </div>
+        <div class="reading-item">
+          <div class="reading-aba">5</div>
+          <div class="reading-desc">
+            <strong>Detalhe por Hospital</strong>
+            Granularidade máxima — filtros nativos por hospital, UF, procedimento e CID.
+          </div>
+        </div>
+        <div class="reading-item">
+          <div class="reading-aba">6</div>
+          <div class="reading-desc">
+            <strong>Metodologia integrada</strong>
+            Defesa técnica disponível ao lado dos dados — para uso em qualquer fórum.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- BLOCO 6: VALIDAÇÃO DE CAMPO -->
+    <div class="section" style="margin-bottom: 0;">
+      <div class="section-label">Validação de campo — convite ao senhor</div>
+      <div class="continuity-cta" style="margin-bottom: 12px;">
+        Os números desta entrega vieram de processamento estatístico rigoroso, mas o cruzamento final com a <strong>realidade que o senhor conhece em campo</strong> é a camada de validação que nenhum pipeline substitui. Sugerimos abrir a planilha com este olhar.
+      </div>
+      <div class="continuity-grid">
+        <div class="continuity-card">
+          <div class="continuity-tag">Sugestão 1</div>
+          <div class="continuity-name">Hospitais que o senhor conhece</div>
+          <div class="continuity-desc">Identifique na Aba 5 (Detalhe por Hospital) prestadores que o senhor acompanha pessoalmente. Volume de cirurgias e taxa de mortalidade reportados são compatíveis com a operação real que o senhor observa? Divergências sinalizam ângulos de discussão para a reunião — ou ajustes a fazer no escopo.</div>
+        </div>
+        <div class="continuity-card">
+          <div class="continuity-tag">Sugestão 2</div>
+          <div class="continuity-name">Procedimentos do seu domínio clínico</div>
+          <div class="continuity-desc">Na Aba 3 (Consolidado por Procedimento), os procedimentos que o senhor domina por experiência apresentam volume nacional dentro da ordem de grandeza esperada? A taxa de mortalidade é coerente com a literatura e com a casuística que o senhor conhece?</div>
+        </div>
+      </div>
+      <div class="continuity-cta" style="margin-top: 12px;">
+        Qualquer divergência identificada — ou hipótese que o senhor queira testar antes da reunião — pode ser ajustada com janela de retorno curta. A THAUMA permanece à disposição para refinamentos enquanto o material estiver vivo.
+      </div>
+    </div>
+
+  </div><!-- /body-content -->
+
+  <!-- ——— RODAPÉ ——— -->
+  <div class="footer">
+    <div class="footer-tagline">"O espanto da descoberta. A ciência do resultado."</div>
+    <div class="footer-contact">
+      <a href="mailto:pedro@thaumaconsultoria.com.br">pedro@thaumaconsultoria.com.br</a><br>
+      linkedin.com/company/thauma-saude
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+</body>
+</html>

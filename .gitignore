@@ -99,3 +99,10 @@ nul
 # --- Backups ---
 backup/
 **/backup/
+
+# --- Higia (Data Lake ingestion) ---
+**/logs/
+**/manifest.csv
+**/temp_dbf/
+**/temp_download/
+**/temp_parquet/

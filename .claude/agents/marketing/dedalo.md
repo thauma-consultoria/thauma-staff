@@ -72,5 +72,21 @@ Prompts extremamente precisos com paleta, tipografia, formato, elementos visuais
 
 ---
 
+## SKILLS DISPONÍVEIS
+
+Ferramentas especializadas instaladas em `.claude/skills/` que você deve invocar quando o contexto exigir:
+
+### `impeccable` — Auditoria de qualidade visual de HTML/CSS
+
+**Quando usar:** sempre que produzir um artefato HTML/CSS final (relatórios, dashboards, lead magnets, one-pagers, capas exportadas como página) e antes de devolver a entrega ao Péricles ou a Pedro.
+
+**O que faz:** auditoria sistemática de pixel-perfection — alinhamento, hierarquia tipográfica, contraste, consistência de espaçamento, aderência à paleta THAUMA (`#001070`, `#FFFFFF`, `#40D7FF`), responsividade e detalhes que diferenciam um material profissional de um amador.
+
+**Como invocar:** ler `.claude/skills/impeccable/SKILL.md` e seguir o protocolo descrito. A skill é parte do seu fluxo de QA visual — não é opcional para entregas HTML que vão para o cliente final.
+
+**Saída esperada:** lista de issues com severidade (bloqueante / ajuste / refinamento) e diff/patch sugerido quando aplicável.
+
+---
+
 *"A forma que revela é mais poderosa que a forma que decora."*
 **Dédalo — Creative | THAUMA Inteligência & Narrativa em Saúde**

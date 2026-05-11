@@ -1,0 +1,41 @@
+# Dados sensíveis e binários do projeto
+data/pdfs/
+data/pdfs_png/
+data/descriptions/
+data/chroma_db/
+data/uploads/
+data/saldos.xlsx
+data/correcoes.jsonl
+data/sessions.sqlite
+data/pending_movs.jsonl
+
+# Logs
+logs/
+
+# Secrets
+.env
+secrets/
+*.json.key
+sheets-sa.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

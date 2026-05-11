@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Master Blueprint - Automação de Pintura Industrial - THAUMA</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm 12mm;
+            background-color: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1a202c;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            font-size: 10pt;
+        }
+        .header-banner {
+            background-color: #1a365d;
+            color: white;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+        h1 { margin: 0; font-size: 22pt; font-weight: 800; letter-spacing: -0.5px; }
+        .subtitle { font-size: 11pt; opacity: 0.9; margin-top: 5px; }
+        
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        h2 {
+            font-size: 15pt;
+            color: #2c5282;
+            border-left: 5px solid #2c5282;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        h3 {
+            font-size: 12pt;
+            color: #2d3748;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+        p { margin-bottom: 12px; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 9pt;
+        }
+        th {
+            background-color: #edf2f7;
+            color: #2d3748;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #e2e8f0;
+            font-weight: bold;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+        
+        .code-container {
+            background-color: #1a202c;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 8.5pt;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        
+        .highlight-box {
+            background-color: #fffaf0;
+            border: 1px solid #feebc8;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        
+        .step-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .step-item {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #2c5282;
+            color: white;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 8pt;
+            line-height: 22px;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 8pt;
+            color: #718096;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>MASTER BLUEPRINT: AUTOMAÇÃO DE PINTURA INDUSTRIAL</h1>
+        <div class="subtitle">THAUMA - Inteligência & Narrativa em Saúde | Consultoria Estratégica</div>
+        <div style="margin-top: 10px; font-size: 9pt; opacity: 0.8;">
+            Especialista Responsável: Pedro William Ribeiro Diniz (EPPGG)
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>1. Visão Geral e Objetivo</h2>
+        <p>Este documento estabelece as diretrizes técnicas para a implementação de um sistema autônomo de identificação de peças e faturamento industrial. A solução visa eliminar a dependência de memória visual humana, substituindo-a por um motor de visão computacional multimodal e uma lógica de negócio determinística.</p>
+        <div class="highlight-box">
+            <strong>Problema Central:</strong> Atualmente, a identificação de peças (ex: Cód. MEC 06332) é feita comparando fotos de celular com desenhos técnicos em PDF, gerando erros de faturamento e quebra do controle FIFO.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Arquitetura Multicamadas (Deep Dive)</h2>
+        
+        <h3>Camada 1: Ingestão e Dicionário Geométrico (Ground Truth)</h3>
+        <p>A inteligência não começa na foto, mas no PDF. Esta camada transforma o acervo estático de engenharia em um banco de dados de características pesquisáveis.</p>
+        <ul>
+            <li><strong>Conversão:</strong> Uso de bibliotecas Python (PyMuPDF) para converter vetores CAD em imagens rasterizadas de alta fidelidade.</li>
+            <li><strong>Extração de Features:</strong> Utilização do Claude 3.5 Sonnet para "ler" a geometria. O foco não é o texto, mas a forma (furos, recortes em X, espessura, abas).</li>
+            <li><strong>Indexação:</strong> Armazenamento das descrições em um banco vetorial (Vector Store) para recuperação rápida via RAG.</li>
+        </ul>
+
+        <h3>Camada 2: Agente Multimodal e RAG (O Motor de Decisão)</h3>
+        <p>O ponto de entrada é o Telegram. O agente recebe a imagem do chão de fábrica e realiza a triangulação de dados.</p>
+        <table>
+            <tr>
+                <th>Ação</th>
+                <th>Processo Técnico</th>
+            </tr>
+            <tr>
+                <td><strong>Localização Espacial</strong></td>
+                <td>Identifica onde estão as peças e onde está o texto escrito na foto.</td>
+            </tr>
+            <tr>
+                <td><strong>Recuperação (RAG)</strong></td>
+                <td>Busca no banco vetorial as 5 descrições de PDFs mais próximas da geometria vista.</td>
+            </tr>
+            <tr>
+                <td><strong>Match Geométrico</strong></td>
+                <td>O Claude compara a foto real com as 5 descrições e seleciona o código com maior probabilidade.</td>
+            </tr>
+        </table>
+
+        <h3>Camada 3: Validação Human-in-the-Loop (Segurança)</h3>
+        <p>Nenhuma escrita em banco de dados ocorre sem aprovação. O bot envia uma mensagem estruturada com botões de confirmação/correção.</p>
+
+        <h3>Camada 4: Motor de Regras FIFO (Execução Determinística)</h3>
+        <p>Script Python puro que processa o lançamento. Ele ignora a IA nesta etapa para garantir precisão matemática 100%.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Roadmap de Construção (Passo a Passo)</h2>
+        
+        <div class="step-list">
+            <div class="step-item">
+                <div class="step-number">1</div>
+                <strong>Fase de Saneamento (Semana 1):</strong> Ingestão dos PDFs. Criar o dicionário visual. Sem isso, a IA não tem base de comparação confiável.
+            </div>
+            <div class="step-item">
+                <div class="step-number">2</div>
+                <strong>Desenvolvimento do Agente (Semana 2):</strong> Configuração do bot no Telegram e integração com OpenRouter. Criação do "Prompt de Geometria".
+            </div>
+            <div class="step-item">
+                <div class="step-number">3</div>
+                <strong>Implementação do Motor FIFO (Semana 3):</strong> Escrita da lógica em Python. Integração com a API do Google Sheets para manipular os saldos das NFs.
+            </div>
+            <div class="step-item">
+                <div class="step-number">4</div>
+                <strong>Homologação e Ajuste de Campo (Semana 4):</strong> Testes com iluminação real do galpão, sombras e pilhas de peças para calibrar a visão.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Especificações Técnicas e Schemas</h2>
+        
+        <h3>Schema de Saída do Agente (Payload para Python)</h3>
+        <div class="code-container">
+{
+  "transaction_id": "THAUMA-2026-X1",
+  "identified_part": {
+    "code": "06332",
+    "description": "Base Montagem Coluna Digimamo TM",
+    "confidence_score": 0.98
+  },
+  "production_data": {
+    "quantity": 34,
+    "unit": "PC",
+    "timestamp": "2026-05-11T20:03:00Z"
+  },
+  "source_image_url": "link_para_bucket_s3_ou_telegram"
+}
+        </div>
+
+        <h3>Blueprint do Prompt de Geometria (System Prompt)</h3>
+        <div class="code-container">
+"Atue como um Engenheiro de Qualidade Industrial. 
+Sua missão é classificar a peça na imagem anexa comparando com o contexto recuperado.
+CRITÉRIOS DE ANÁLISE:
+1. Contagem de furos e diâmetro aproximado.
+2. Formato do perímetro (irregular, simétrico, retangular).
+3. Recortes internos (ex: padrão em 'X' centralizado).
+RESTRIÇÃO: Retorne apenas JSON. Não adicione comentários introdutórios."
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Análise de Custos e Margem (Volume: 10 fotos/dia)</h2>
+        <table>
+            <tr>
+                <th>Categoria</th>
+                <th>Custo Estimado (Mensal)</th>
+                <th>Notas</th>
+            </tr>
+            <tr>
+                <td>API Claude 3.5 Sonnet</td>
+                <td>R$ 11,50</td>
+                <td>Extremamente eficiente para visão.</td>
+            </tr>
+            <tr>
+                <td>Hospedagem (VPS / n8n)</td>
+                <td>R$ 150,00</td>
+                <td>Ambiente controlado para automação.</td>
+            </tr>
+            <tr>
+                <td><strong>Custo Fixo Total</strong></td>
+                <td><strong>R$ 161,50</strong></td>
+                <td>---</td>
+            </tr>
+        </table>
+        <p><strong>Margem THAUMA:</strong> Com um MRR sugerido de R$ 1.000,00, a margem líquida operacional é de <strong>~84%</strong>, permitindo reinvestimento em suporte e melhorias.</p>
+    </div>
+
+    <div class="footer">
+        Documento gerado para Pedro William Ribeiro Diniz | THAUMA - Inteligência & Narrativa em Saúde<br>
+        Especificações de Engenharia de Prompt e Automação de Processos
+    </div>
+
+</body>
+</html>

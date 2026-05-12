@@ -113,6 +113,62 @@ Projetos/Automatização Bruno/
 
 ---
 
+## Pré-requisitos por sprint (checklist Pedro)
+
+> **Como ler:** cada sprint só destrava quando todos os itens marcados como ⚠️ estiverem prontos. Itens 🟢 são desejáveis mas não bloqueiam.
+
+### Sprint 0 — Bootstrap + smoke APIs
+- ⚠️ **`ANTHROPIC_API_KEY`** — Pedro já tem (Higia)
+- ⚠️ **`OPENROUTER_API_KEY`** — criar em https://openrouter.ai/keys + saldo U$5-10
+- ⚠️ **`GOOGLE_AI_KEY`** — criar em https://aistudio.google.com/apikey (free tier basta)
+- ⚠️ **`OPENAI_API_KEY`** — Pedro provavelmente já tem; senão https://platform.openai.com/api-keys + U$5 saldo
+- ⚠️ **`TELEGRAM_BOT_TOKEN`** — falar com `@BotFather` (`/newbot`)
+- ⚠️ **`TELEGRAM_ALLOWED_USER_IDS`** — pegar via `@userinfobot` (Pedro + Bruno)
+- 🟢 Confirmação Hefesto: VPS Hostinger tem ~512MB RAM extra livre
+
+### Sprint 1 — Adapters (LLM, Embedding, VectorStore)
+- ⚠️ Tudo do Sprint 0 fechado (smoke das 4 APIs verde)
+- _Sem novos requisitos externos_
+
+### Sprint 2 — Ingestão de PDFs
+- ⚠️ Tudo do Sprint 1 fechado
+- ⚠️ **30-50 PDFs do Bruno** em `data/pdfs/` com nomes no formato `<codigo>.pdf` (ex: `06332.pdf`)
+- ⚠️ Bruno autorizou explicitamente envio dos PDFs à API Anthropic e Google
+- 🟢 Lista priorizada das peças mais frequentes (sem isso, Pedro escolhe critério: random ou top-N por volume vendido)
+
+### Sprint 3 — Agente identificador
+- ⚠️ Tudo do Sprint 2 fechado (ChromaDB indexado, smoke query funciona)
+- _Sem novos requisitos externos_
+
+### Sprint 4 — HITL + Storage Excel + FIFO
+- ⚠️ Tudo do Sprint 3 fechado
+- 🟢 Estrutura inicial de `saldos.xlsx` com lotes do Bruno (se não, sistema cria vazio e Pedro injeta dados de teste fictícios)
+
+### Sprint 5 — Telegram polling + Gate POC-A
+- ⚠️ Tudo do Sprint 4 fechado
+- ⚠️ **10 fotos de teste com gabarito** (Pedro tira ou Bruno manda) — para validar 70%+ acerto
+- 🟢 Bruno disponível para 1 call rápida de demo informal (opcional na Fase A)
+
+### Sprint 6 — Migração VPS (Webhook + FastAPI + Sheets + Docker)
+- ⚠️ Gate POC-A passou (≥7/10 acertos)
+- ⚠️ **Acesso SSH à VPS Hostinger** (mesma do Higia) com Docker + Compose instalados
+- ⚠️ **Subdomínio apontado para o IP da VPS** (sugestão: `bruno.thauma.consulting`)
+- ⚠️ **Service Account Google + Sheet ID** — Hefesto guia Pedro em https://console.cloud.google.com → IAM → Service Accounts → criar key JSON → compartilhar Google Sheet com o email do SA
+- ⚠️ **`GOOGLE_SHEETS_CREDS_PATH`** + **`GOOGLE_SHEET_ID`** preenchidos em `.env.production`
+- 🟢 Certificado SSL do subdomínio via certbot (Hefesto faz)
+
+### Sprint 7 — Handoff Bruno + Gate POC-B + Gate comercial
+- ⚠️ Sprint 6 deployado e smoke pessoal de Pedro passou
+- ⚠️ **Janela de 2-3 dias combinada com Bruno** (datas explícitas, ex: 28-30/05)
+- ⚠️ **20 fotos com gabarito** entregues por Bruno para a demo final do Gate Comercial
+- ⚠️ Bruno tem o handle do bot (`@nome_do_bot`) e instruções enviadas
+- 🟢 Pricing pré-acordado verbalmente com Bruno (R$ 1k MRR + R$ 4-6k setup) para evitar surpresa no fechamento
+
+### Síntese — o que destrava começar HOJE
+**Sprint 0 só precisa dos 6 itens ⚠️ acima** (4 API keys + bot Telegram + 2 user_ids). Tudo o mais (PDFs, VPS, fotos gabarito) tem janela de várias sessões para resolver em paralelo aos sprints anteriores.
+
+---
+
 # SPRINT 0 — Setup base (T1-T3) — Estimado 4-6h
 
 Objetivo: projeto Python operacional, dependências instaladas, credenciais validadas via smoke test antes de qualquer código de domínio.

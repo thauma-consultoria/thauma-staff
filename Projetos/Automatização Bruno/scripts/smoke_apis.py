@@ -41,11 +41,14 @@ async def test_anthropic(cfg: AppConfig) -> bool:
             max_tokens=10,
             messages=[{"role": "user", "content": "Diga 'pong'"}],
         )
-        first = msg.content[0] if msg.content else None
-        text = first.text if isinstance(first, TextBlock) else ""
+        text = "".join(b.text for b in msg.content if isinstance(b, TextBlock))
         return "pong" in text.lower()
     except Exception as e:
-        get_logger("smoke").error("anthropic_failed", error=str(e))
+        get_logger("smoke").error(
+            "anthropic_failed",
+            error_type=type(e).__name__,
+            error_msg=str(e)[:500],
+        )
         return False
 
 
@@ -65,7 +68,11 @@ async def test_openrouter(cfg: AppConfig) -> bool:
             content = r.json()["choices"][0]["message"]["content"]
             return "pong" in content.lower()
         except Exception as e:
-            get_logger("smoke").error("openrouter_failed", error=str(e))
+            get_logger("smoke").error(
+                "openrouter_failed",
+                error_type=type(e).__name__,
+                error_msg=str(e)[:500],
+            )
             return False
 
 
@@ -88,7 +95,12 @@ async def test_google_embedding(cfg: AppConfig) -> bool:
                     )
                 return True
         except Exception as e:
-            log.warning("google_model_failed", model=model, error=str(e))
+            log.warning(
+                "google_model_failed",
+                model=model,
+                error_type=type(e).__name__,
+                error_msg=str(e)[:500],
+            )
     log.error("google_embedding_all_models_failed")
     return False
 
@@ -103,21 +115,27 @@ async def test_openai_embedding(cfg: AppConfig) -> bool:
         )
         return len(r.data[0].embedding) == 768
     except Exception as e:
-        get_logger("smoke").error("openai_failed", error=str(e))
+        get_logger("smoke").error(
+            "openai_failed",
+            error_type=type(e).__name__,
+            error_msg=str(e)[:500],
+        )
         return False
 
 
 async def main() -> int:
-    setup_logging()
-    log = get_logger("smoke")
     cfg = AppConfig()  # type: ignore[call-arg]
+    setup_logging(level=cfg.log_level, logs_path=cfg.logs_path)
+    log = get_logger("smoke")
 
-    results = {
-        "anthropic": await test_anthropic(cfg),
-        "openrouter": await test_openrouter(cfg),
-        "google_embedding": await test_google_embedding(cfg),
-        "openai_embedding": await test_openai_embedding(cfg),
-    }
+    labels = ("anthropic", "openrouter", "google_embedding", "openai_embedding")
+    outcomes = await asyncio.gather(
+        test_anthropic(cfg),
+        test_openrouter(cfg),
+        test_google_embedding(cfg),
+        test_openai_embedding(cfg),
+    )
+    results = dict(zip(labels, outcomes, strict=True))
 
     for api, ok in results.items():
         log.info("smoke_result", api=api, ok=ok)

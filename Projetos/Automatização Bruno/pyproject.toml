@@ -50,6 +50,3 @@ asyncio_mode = "auto"
 testpaths = ["tests"]
 pythonpath = ["."]
 
-[tool.uv]
-# Adiciona raiz do projeto ao PYTHONPATH ao rodar scripts com `uv run`
-environments = ["python_version >= '3.12'"]

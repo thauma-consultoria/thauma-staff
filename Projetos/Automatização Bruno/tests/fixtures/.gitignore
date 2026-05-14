@@ -1,0 +1,3 @@
+# Permitir PDFs de fixture de teste (arquivos sintéticos, sem dados reais)
+!*.pdf
+!*.PDF

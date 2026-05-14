@@ -40,6 +40,17 @@ class ChromaDBStore:
         coll.upsert(ids=[id], embeddings=[embedding], metadatas=[metadata])
         _log.debug("chroma_add", id=id, provider=provider_tag, dim=len(embedding))
 
+    def get_ids(self, provider_tag: str) -> list[str]:
+        """Retorna todos os IDs presentes na coleção do provider indicado.
+
+        Usa include=["metadatas"] como mínimo aceito pelos stubs chromadb;
+        o que importa é result["ids"] que sempre vem independente do include.
+        """
+        coll = self._coll(provider_tag)
+        result = coll.get(include=["metadatas"])
+        ids: list[str] = list(result["ids"])
+        return ids
+
     def query(
         self, embedding: list[float], top_k: int, provider_tag: str
     ) -> list[PartCandidate]:

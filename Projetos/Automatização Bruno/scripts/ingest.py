@@ -17,15 +17,25 @@ Idempotência por estágio:
     2. Descrição existe em data/descriptions/<code>.txt → skip Sonnet
     3. Código presente em AMBAS coleções (google+openai) → skip embeddings+upsert
 """
+from __future__ import annotations
+
 import argparse
 import asyncio
 import re
 import sys
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Protocol
+from typing import TYPE_CHECKING, Protocol
 
-from src.models import PartCandidate
+# Garante que o raiz do projeto está no sys.path quando o script é invocado
+# diretamente (ex: python scripts/ingest.py). Com uv run ou pytest o editable
+# install já resolve, mas sem isso o CWD cai em scripts/ e 'src' some.
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
+if TYPE_CHECKING:
+    from src.models import PartCandidate
 
 # ---------------------------------------------------------------------------
 # Protocols para tipagem dos providers (sem importar as implementações)
